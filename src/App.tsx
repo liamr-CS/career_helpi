@@ -39,15 +39,10 @@ function App() {
         >
           Learn React
         </a>
-<<<<<<< HEAD
-        <div>
-          Ben Bank
-        </div>
-=======
       <div>
         <p>Liam Roth</p>
+        <p> Ben Bank</p>
       </div>
->>>>>>> a73dfb323b03d4f6ed1a00e1a3c0dc7bb5e6d4a8
       </header>
       <Form>
         <Form.Label>API Key:</Form.Label>
