@@ -27,19 +27,6 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       <div>
         <p>Liam Roth</p>
         <p>Ben Bank</p>
@@ -49,7 +36,6 @@ function App() {
         <h2>Basic Quiz Instructions:</h2>
       <BaseQsDes></BaseQsDes>
       </div>
-      </header>
       <Form>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
