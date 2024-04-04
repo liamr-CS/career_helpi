@@ -41,7 +41,8 @@ function App() {
         </a>
       <div>
         <p>Liam Roth</p>
-        <p> Ben Bank</p>
+        <p>Ben Bank</p>
+        <p>Xander Clawson</p>
       </div>
       </header>
       <Form>
