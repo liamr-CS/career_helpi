@@ -25,12 +25,30 @@ function App() {
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
     setKey(event.target.value);
   }
+
   return (
     <div className="App">
       <div>
         <p>Liam Roth</p>
         <p>Ben Bank</p>
         <p>Xander Clawson</p>
+      </div>
+      <div>
+        <a
+          href="https://liamr-cs.github.io/career_helpi/"
+          style={{ 
+            position: 'absolute', 
+            top: 0, 
+            left: 0, 
+            border: '2px solid gray', 
+            padding: '8px', 
+            textDecoration: 'none', 
+            color: 'black',
+            fontSize: '18px'
+          }}
+        >
+          Homepage
+        </a>
       </div>
       <div>
         <h2>Basic Quiz Instructions:</h2>
