@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button, Form } from 'react-bootstrap';
+import BaseQsDes from './BaseAsk';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -43,6 +44,10 @@ function App() {
         <p>Liam Roth</p>
         <p>Ben Bank</p>
         <p>Xander Clawson</p>
+      </div>
+      <div>
+        <h2>Basic Quiz Instructions:</h2>
+      <BaseQsDes></BaseQsDes>
       </div>
       </header>
       <Form>
