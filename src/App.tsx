@@ -39,9 +39,10 @@ function App() {
         >
           Learn React
         </a>
-        <div>
-          Ben Bank
-        </div>
+      <div>
+        <p>Liam Roth</p>
+        <p> Ben Bank</p>
+      </div>
       </header>
       <Form>
         <Form.Label>API Key:</Form.Label>
