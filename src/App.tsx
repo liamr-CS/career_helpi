@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Button, Form } from 'react-bootstrap';
 import BaseQsDes from './BaseAsk';
+import DetailQsDes from './DetailAsk';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -54,6 +55,12 @@ function App() {
         <h2>Basic Quiz Instructions:</h2>
       <BaseQsDes></BaseQsDes>
       </div>
+      <button>Basic Quiz</button>
+      <div>
+        <h2>Detailed Quiz Instructions:</h2>
+      <DetailQsDes></DetailQsDes>
+      </div>
+      <button>Detailed Quiz</button>
       <Form>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
