@@ -36,6 +36,7 @@ function App() {
         <h2>Basic Quiz Instructions:</h2>
       <BaseQsDes></BaseQsDes>
       </div>
+      <button>Basic Quiz</button>
       <Form>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
