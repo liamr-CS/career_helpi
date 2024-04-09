@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (74 ms)
+  ✕ renders learn react link (108 ms)
 
   ● renders learn react link
 
@@ -207,180 +207,7 @@ FAIL src/App.test.tsx
                 [36m</label>[39m
               [36m</div>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"with others"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mWith Others[0m
-                [36m</label>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0mDo you enjoy being creative?[0m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"yes"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mYes[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"no"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mNo[0m
-                [36m</label>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0mAre you good at analyzing data or information?[0m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"yes"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mYes[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"no"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mNo[0m
-                [36m</label>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0mDo you have clear goals for your future career?[0m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"yes"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mYes[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"no"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mNo[0m
-                [36m</label>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<h2>[39m
-              [0mDetailed Quiz Instructions:[0m
-            [36m</h2>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"basic-questions-description"[39m
-            [36m>[39m
-              [36m<p>[39m
-                [0m-The detailed career assessment consists of a mix of rating, level-of-agreement, and yes-and-no questions that you will answer.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0m-Answer these questions as accurately as possible while ensuring not to skip any. You are not required to go in a specific order when answering.[0m
-              [36m</p>[39m
-              [36m<p>[39m
-                [0m-The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.[0m
-              [36m</p>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<h1>[39m
-            [0mTAKE THE DETAILED QUIZ HERE:[0m
-          [36m</h1>[39m
-          [36m<button>[39m
-            [36m<h3>[39m
-              [0mDetailed Quiz[0m
-            [36m</h3>[39m
-          [36m</button>[39m
-          [36m<button>[39m
-            [0mStart/Stop Detailed Quiz Timer[0m
-          [36m</button>[39m
-          [36m<form[39m
-            [33mclass[39m=[32m""[39m
-          [36m>[39m
-            [36m<label[39m
-              [33mclass[39m=[32m"form-label"[39m
-            [36m>[39m
-              [0mAPI Key:[0m
-            [36m</label>[39m
-            [36m<input[39m
-              [33mclass[39m=[32m"form-control"[39m
-              [33mplaceholder[39m=[32m"Insert API Key Here"[39m
-              [33mtype[39m=[32m"password"[39m
-            [36m/>[39m
-            [36m<br />[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"Submit-Button btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mSubmit[0m
-            [36m</button>[39m
-          [36m</form>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+       ...
 
     [0m [90m  5 |[39m test([32m'renders learn react link'[39m[33m,[39m () [33m=>[39m {
      [90m  6 |[39m   render([33m<[39m[33mApp[39m [33m/[39m[33m>[39m)[33m;[39m
@@ -403,12 +230,12 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|---------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s   
 -----------------------|---------|----------|---------|---------|---------------------
-All files              |   41.86 |    16.66 |      20 |   41.86 |                     
- App.tsx               |   57.14 |       50 |      20 |   57.14 | 15,23-29,62-70      
+All files              |   45.61 |    16.66 |   18.51 |   45.61 |                     
+ App.tsx               |   57.14 |       50 |      20 |   57.14 | 16,24-30,63-72      
  BaseAsk.tsx           |     100 |      100 |     100 |     100 |                     
  BasicQuestions.tsx    |   53.33 |      100 |    12.5 |   53.33 | 7,11,15,19,23,27,31 
  DetailAsk.tsx         |     100 |      100 |     100 |     100 |                     
- DetailedQuestions.tsx |       0 |      100 |       0 |       0 | 2                   
+ DetailedQuestions.tsx |   53.33 |      100 |    12.5 |   53.33 | 7,11,15,19,23,27,31 
  Timer.tsx             |       0 |        0 |       0 |       0 |                     
  index.tsx             |       0 |      100 |     100 |       0 | 7-19                
  reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10                
@@ -416,7 +243,7 @@ All files              |   41.86 |    16.66 |      20 |   41.86 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.911 s
+Time:        2.944 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
