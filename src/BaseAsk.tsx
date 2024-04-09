@@ -12,6 +12,9 @@ function BaseQsDes() {
             <p>
                 -The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.
             </p>
+            <p>
+                Access the basic career assessment with the button below!
+            </p>
         </div>
     );
 }
