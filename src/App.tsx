@@ -54,12 +54,14 @@ function App() {
         <h2>Basic Quiz Instructions:</h2>
       <BaseQsDes></BaseQsDes>
       </div>
-      <button>Basic Quiz</button>
+      <h1>TAKE THE BASIC QUIZ HERE:</h1>
+      <button><h3>Basic Quiz</h3></button>
       <div>
         <h2>Detailed Quiz Instructions:</h2>
       <DetailQsDes></DetailQsDes>
       </div>
-      <button>Detailed Quiz</button>
+      <h1>TAKE THE DETAILED QUIZ HERE:</h1>
+      <button><h3>Detailed Quiz</h3></button>
       <Form>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
