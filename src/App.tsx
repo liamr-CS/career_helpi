@@ -3,9 +3,8 @@ import './App.css';
 import { Button, Form } from 'react-bootstrap';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
-
-import Questions from './BasicQuestions';
 import timer from './Timer';
+import Questions from './BasicQuestions'
 const Basictimer = new timer();
 const DetailTimer = new timer();
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
@@ -60,6 +59,8 @@ function App() {
       </div>
       <h1>TAKE THE BASIC QUIZ HERE:</h1>
       <button><h3>Basic Quiz</h3></button>
+      <button onClick={()=>Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
+      <Questions></Questions>
       <div>
         <h2>Detailed Quiz Instructions:</h2>
       <DetailQsDes></DetailQsDes>
