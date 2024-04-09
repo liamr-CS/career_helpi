@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (46 ms)
+  ✕ renders learn react link (68 ms)
 
   ● renders learn react link
 
@@ -63,6 +63,268 @@ FAIL src/App.test.tsx
               [0mBasic Quiz[0m
             [36m</h3>[39m
           [36m</button>[39m
+          [36m<div>[39m
+            [36m<p>[39m
+              [0mDo you enjoy working with your hands?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"yes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"no"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mAre you interested in technology?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"yes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"no"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mDo you like solving puzzles or problems?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"yes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"sometimes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mSometimes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"no"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mDo you prefer working alone or in a team?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"alone"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mAlone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"with others"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWith Others[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mDo you enjoy being creative?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"yes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"no"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mAre you good at analyzing data or information?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"yes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"no"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mDo you have clear goals for your future career?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"yes"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"no"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
           [36m<div>[39m
             [36m<h2>[39m
               [0mDetailed Quiz Instructions:[0m
@@ -132,22 +394,22 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |      32 |    16.66 |   33.33 |      32 |                   
- App.tsx               |      60 |       50 |   33.33 |      60 | 12,20-26          
- BaseAsk.tsx           |     100 |      100 |     100 |     100 |                   
- BasicQuestions.tsx    |       0 |      100 |       0 |       0 | 2                 
- DetailAsk.tsx         |     100 |      100 |     100 |     100 |                   
- DetailedQuestions.tsx |       0 |      100 |       0 |       0 | 2                 
- index.tsx             |       0 |      100 |     100 |       0 | 7-19              
- reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
------------------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|---------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s   
+-----------------------|---------|----------|---------|---------|---------------------
+All files              |   41.02 |    16.66 |      25 |   41.02 |                     
+ App.tsx               |      60 |       50 |   33.33 |      60 | 13,21-27            
+ BaseAsk.tsx           |     100 |      100 |     100 |     100 |                     
+ BasicQuestions.tsx    |   53.33 |      100 |    12.5 |   53.33 | 7,11,15,19,23,27,31 
+ DetailAsk.tsx         |     100 |      100 |     100 |     100 |                     
+ DetailedQuestions.tsx |       0 |      100 |       0 |       0 | 2                   
+ index.tsx             |       0 |      100 |     100 |       0 | 7-19                
+ reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10                
+-----------------------|---------|----------|---------|---------|---------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.813 s
+Time:        2.929 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
