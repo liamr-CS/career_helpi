@@ -1,4 +1,7 @@
-function Questions () {
+import React, { useState } from "react";
+import { Form } from "react-bootstrap";
+
+function DetQuestions () {
     return (
         <div>
             <p>
@@ -25,3 +28,5 @@ function Questions () {
         </div>
     );
 }
+
+export default DetQuestions
