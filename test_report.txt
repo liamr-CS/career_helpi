@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (46 ms)
+  ✕ renders learn react link (45 ms)
 
   ● renders learn react link
 
@@ -49,6 +49,9 @@ FAIL src/App.test.tsx
               [36m</p>[39m
               [36m<p>[39m
                 [0m-The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.[0m
+              [36m</p>[39m
+              [36m<p>[39m
+                [0mAccess the basic career assessment with the button below![0m
               [36m</p>[39m
             [36m</div>[39m
           [36m</div>[39m
@@ -134,7 +137,7 @@ All files              |      32 |    16.66 |   33.33 |      32 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.836 s
+Time:        2.829 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
