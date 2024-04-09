@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
+import Questions from './BasicQuestions';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 export let keyData = "";
@@ -55,6 +56,7 @@ function App() {
       </div>
       <h1>TAKE THE BASIC QUIZ HERE:</h1>
       <button><h3>Basic Quiz</h3></button>
+      <Questions></Questions>
       <div>
         <h2>Detailed Quiz Instructions:</h2>
       <DetailQsDes></DetailQsDes>
