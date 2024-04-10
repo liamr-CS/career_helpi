@@ -30,6 +30,12 @@ function App() {
     setKey(event.target.value);
   }
 
+  const [showBasicQuestions, setShowBasicQuestions] = useState(false);
+
+  const toggleBasicQuestions = () => {
+    setShowBasicQuestions(!showBasicQuestions);
+  };
+
   return (
     <div className="App">
       <div>
@@ -59,9 +65,9 @@ function App() {
       <BaseQsDes></BaseQsDes>
       </div>
       <h1>TAKE THE BASIC QUIZ HERE:</h1>
-      <button><h3>Basic Quiz</h3></button>
+      <button onClick={toggleBasicQuestions}><h3>Basic Quiz</h3></button>
       <button onClick={()=>Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
-      <Questions></Questions>
+      {showBasicQuestions && <Questions show={showBasicQuestions} />}
       <div>
         <h2>Detailed Quiz Instructions:</h2>
       <DetailQsDes></DetailQsDes>

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
-function Questions () {
+interface Props {
+    show: boolean;
+  }
+
+  const Questions: React.FC<Props> = ({ show }) => {
     const [answer1, setAnswer1] = useState<string>("");
     function updateAnswer1(event: React.ChangeEvent<HTMLInputElement>) {
         setAnswer1(event.target.value);
@@ -30,6 +34,9 @@ function Questions () {
     function updateAnswer7(event: React.ChangeEvent<HTMLInputElement>) {
         setAnswer7(event.target.value);
     }
+
+    if (!show) return null;
+    
     return(
         <div>
             <p>Do you enjoy working with your hands?</p>
