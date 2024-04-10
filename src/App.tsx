@@ -81,7 +81,7 @@ function App() {
       <h1>TAKE THE DETAILED QUIZ HERE:</h1>
       <button onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
       <button onClick={()=>DetailTimer.toggle}>Start/Stop Detailed Quiz Timer</button>
-      {showDetailedQuestions && <Questions show={showDetailedQuestions} />}
+      {showDetailedQuestions && <DetQuestions show={showDetailedQuestions} />}
       <Form>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
