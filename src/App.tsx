@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
-import timer from './Timer';
 import Questions from './BasicQuestions'
+import DetQuestions from './DetailedQuestions'
+import timer from './Timer';
 const Basictimer = new timer();
 const DetailTimer = new timer();
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
@@ -67,6 +68,7 @@ function App() {
       </div>
       <h1>TAKE THE DETAILED QUIZ HERE:</h1>
       <button><h3>Detailed Quiz</h3></button>
+      <DetQuestions></DetQuestions>
       <button onClick={()=>DetailTimer.toggle}>Start/Stop Detailed Quiz Timer</button>
       <Form>
         <Form.Label>API Key:</Form.Label>
