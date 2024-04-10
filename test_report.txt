@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (108 ms)
+  ✕ renders learn react link (90 ms)
 
   ● renders learn react link
 
@@ -42,10 +42,10 @@ FAIL src/App.test.tsx
               [33mclass[39m=[32m"basic-questions-description"[39m
             [36m>[39m
               [36m<p>[39m
-                [0m-The basic career assessment consists of a mix of yes-and-no and multiple choice questions that you will answer.[0m
+                [0m-Answer these questions as accurately as possible while ensuring not to skip any.[0m
               [36m</p>[39m
               [36m<p>[39m
-                [0m-Answer these questions as accurately as possible while ensuring not to skip any.[0m
+                [0m-The basic career assessment consists of a mix of yes-and-no and multiple choice questions that you will answer.[0m
               [36m</p>[39m
               [36m<p>[39m
                 [0m-The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.[0m
@@ -67,8 +67,34 @@ FAIL src/App.test.tsx
             [0mStart/Stop Basic Quiz Timer[0m
           [36m</button>[39m
           [36m<div>[39m
+            [36m<h2>[39m
+              [0mDetailed Quiz Instructions:[0m
+            [36m</h2>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"basic-questions-description"[39m
+            [36m>[39m
+              [36m<p>[39m
+                [0m-The detailed career assessment consists of a mix of rating, level-of-agreement, and yes-and-no questions that you will answer.[0m
+              [36m</p>[39m
+              [36m<p>[39m
+                [0m-Answer these questions as accurately as possible while ensuring not to skip any. You are not required to go in a specific order when answering.[0m
+              [36m</p>[39m
+              [36m<p>[39m
+                [0m-The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<h1>[39m
+            [0mTAKE THE DETAILED QUIZ HERE:[0m
+          [36m</h1>[39m
+          [36m<button>[39m
+            [36m<h3>[39m
+              [0mDetailed Quiz[0m
+            [36m</h3>[39m
+          [36m</button>[39m
+          [36m<div>[39m
             [36m<p>[39m
-              [0mDo you enjoy working with your hands?[0m
+              [0mOn a scale of one to five, how much do you like programming?[0m
             [36m</p>[39m
             [36m<div>[39m
               [36m<div[39m
@@ -77,13 +103,13 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"yes"[39m
+                  [33mvalue[39m=[32m"1"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
                   [33mtitle[39m=[32m""[39m
                 [36m>[39m
-                  [0mYes[0m
+                  [0m1[0m
                 [36m</label>[39m
               [36m</div>[39m
               [36m<div[39m
@@ -92,18 +118,63 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"no"[39m
+                  [33mvalue[39m=[32m"2"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
                   [33mtitle[39m=[32m""[39m
                 [36m>[39m
-                  [0mNo[0m
+                  [0m2[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m3[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"4"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m4[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"5"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m5[0m
                 [36m</label>[39m
               [36m</div>[39m
             [36m</div>[39m
             [36m<p>[39m
-              [0mAre you interested in technology?[0m
+              [0mOn a scale of strongly agree to strongly disagree, are you a leader?[0m
             [36m</p>[39m
             [36m<div>[39m
               [36m<div[39m
@@ -112,13 +183,13 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"yes"[39m
+                  [33mvalue[39m=[32m"1"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
                   [33mtitle[39m=[32m""[39m
                 [36m>[39m
-                  [0mYes[0m
+                  [0mStrongly Agree[0m
                 [36m</label>[39m
               [36m</div>[39m
               [36m<div[39m
@@ -127,18 +198,63 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"no"[39m
+                  [33mvalue[39m=[32m"2"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
                   [33mtitle[39m=[32m""[39m
                 [36m>[39m
-                  [0mNo[0m
+                  [0mAgree[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNeutral[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"4"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mDisagree[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"5"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mStrongly Disagree[0m
                 [36m</label>[39m
               [36m</div>[39m
             [36m</div>[39m
             [36m<p>[39m
-              [0mDo you like solving puzzles or problems?[0m
+              [0mRespond with how correct the following statement is: reality is objective.[0m
             [36m</p>[39m
             [36m<div>[39m
               [36m<div[39m
@@ -147,13 +263,13 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"yes"[39m
+                  [33mvalue[39m=[32m"1"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
                   [33mtitle[39m=[32m""[39m
                 [36m>[39m
-                  [0mYes[0m
+                  [0m100% correct[0m
                 [36m</label>[39m
               [36m</div>[39m
               [36m<div[39m
@@ -162,7 +278,102 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"sometimes"[39m
+                  [33mvalue[39m=[32m"2"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m75% correct[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m50% correct[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"4"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m25% correct[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"5"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0m0% correct[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mRespond with how often you do the following: think about the future.[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"1"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mAll the time[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"2"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mA lot of the time[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
@@ -177,7 +388,72 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"no"[39m
+                  [33mvalue[39m=[32m"4"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNot very often[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"5"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNever[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mCan you see yourself in this career: a fast-paced work environment?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"1"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mYes[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"2"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mMaybe[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
@@ -188,7 +464,7 @@ FAIL src/App.test.tsx
               [36m</div>[39m
             [36m</div>[39m
             [36m<p>[39m
-              [0mDo you prefer working alone or in a team?[0m
+              [0mDoes the following sound like you: I want a good-work life balance?[0m
             [36m</p>[39m
             [36m<div>[39m
               [36m<div[39m
@@ -197,17 +473,139 @@ FAIL src/App.test.tsx
                 [36m<input[39m
                   [33mclass[39m=[32m"form-check-input"[39m
                   [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"alone"[39m
+                  [33mvalue[39m=[32m"1"[39m
                 [36m/>[39m
                 [36m<label[39m
                   [33mclass[39m=[32m"form-check-label"[39m
                   [33mtitle[39m=[32m""[39m
                 [36m>[39m
-                  [0mAlone[0m
+                  [0mThat sounds like me[0m
                 [36m</label>[39m
               [36m</div>[39m
               [36m<div[39m
-       ...
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"2"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mThat kind of sounds like me[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNo, that does not sound like me[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p>[39m
+              [0mWhich one of the following careers sounds the most appealing?[0m
+            [36m</p>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"1"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mCarpenter[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"2"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTailor[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"3"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mConstruction Worker[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"4"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mJeweler[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<button>[39m
+            [0mStart/Stop Detailed Quiz Timer[0m
+          [36m</button>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m""[39m
+          [36m>[39m
+            [36m<label[39m
+              [33mclass[39m=[32m"form-label"[39m
+            [36m>[39m
+              [0mAPI Key:[0m
+            [36m</label>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"form-control"[39m
+              [33mplaceholder[39m=[32m"Insert API Key Here"[39m
+              [33mtype[39m=[32m"password"[39m
+            [36m/>[39m
+            [36m<br />[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"Submit-Button btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSubmit[0m
+            [36m</button>[39m
+          [36m</form>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
     [0m [90m  5 |[39m test([32m'renders learn react link'[39m[33m,[39m () [33m=>[39m {
      [90m  6 |[39m   render([33m<[39m[33mApp[39m [33m/[39m[33m>[39m)[33m;[39m
@@ -230,10 +628,10 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|---------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s   
 -----------------------|---------|----------|---------|---------|---------------------
-All files              |   45.61 |    16.66 |   18.51 |   45.61 |                     
- App.tsx               |   57.14 |       50 |      20 |   57.14 | 16,24-30,63-72      
+All files              |   33.33 |       20 |   14.28 |   33.87 |                     
+ App.tsx               |   58.82 |       50 |   16.66 |   58.82 | 16,24-30,36,69-78   
  BaseAsk.tsx           |     100 |      100 |     100 |     100 |                     
- BasicQuestions.tsx    |   53.33 |      100 |    12.5 |   53.33 | 7,11,15,19,23,27,31 
+ BasicQuestions.tsx    |    5.55 |        0 |       0 |    5.88 | 9-40                
  DetailAsk.tsx         |     100 |      100 |     100 |     100 |                     
  DetailedQuestions.tsx |   53.33 |      100 |    12.5 |   53.33 | 7,11,15,19,23,27,31 
  Timer.tsx             |       0 |        0 |       0 |       0 |                     
@@ -243,7 +641,7 @@ All files              |   45.61 |    16.66 |   18.51 |   45.61 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.944 s
+Time:        2.849 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
