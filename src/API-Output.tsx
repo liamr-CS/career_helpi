@@ -1,4 +1,4 @@
-interface JobProfile {
+export interface JobProfile {
     best_suited_for: string[];
     will_still_do_well_in: string[];
     can_adapt_to: string[];
