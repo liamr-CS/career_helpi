@@ -66,28 +66,45 @@ function App() {
           Homepage
         </a>
       </div>
-      <div>
+      {!showBasicQuestions && !showDetailedQuestions ? (      
+        <div>
+        <div>
         <h2>Basic Quiz Instructions:</h2>
-      <BaseQsDes></BaseQsDes>
+        <BaseQsDes></BaseQsDes>
+        </div>
+          <h1>TAKE THE BASIC QUIZ HERE:</h1>
+          <button onClick={toggleBasicQuestions}><h3>Basic Quiz</h3></button>
+        <div>
+          <h2>Detailed Quiz Instructions:</h2>
+        <DetailQsDes></DetailQsDes>
+        </div>
+        <h1>TAKE THE DETAILED QUIZ HERE:</h1>
+        <button onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
+        </div>
+      ) : showBasicQuestions ? (
+        <div>
+          <h2>Basic Quiz Instructions:</h2>
+          <BaseQsDes></BaseQsDes>
+          <button onClick={()=>Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
+          <Questions></Questions>
+        </div>
+      ) : (
+          <div>
+          <h2>Detailed Quiz Instructions:</h2>
+          <DetailQsDes></DetailQsDes>
+          <button onClick={()=>Basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
+          <DetQuestions></DetQuestions>
       </div>
-      <h1>TAKE THE BASIC QUIZ HERE:</h1>
-      <button onClick={toggleBasicQuestions}><h3>Basic Quiz</h3></button>
-      <button onClick={()=>Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
-      {showBasicQuestions && <Questions show={showBasicQuestions} />}
+      )
+      } 
       <div>
-        <h2>Detailed Quiz Instructions:</h2>
-      <DetailQsDes></DetailQsDes>
-      </div>
-      <h1>TAKE THE DETAILED QUIZ HERE:</h1>
-      <button onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
-      <button onClick={()=>DetailTimer.toggle}>Start/Stop Detailed Quiz Timer</button>
-      {showDetailedQuestions && <DetQuestions show={showDetailedQuestions} />}
       <Form>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
         <br></br>
         <Button className="Submit-Button" onClick={handleSubmit}>Submit</Button>
       </Form>
+      </div>
     </div>
   );
 }
