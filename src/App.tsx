@@ -7,7 +7,7 @@ import Questions from './BasicQuestions'
 import DetQuestions from './DetailedQuestions'
 import timer from './Timer';
 const Basictimer = new timer();
-const DetailTimer = new timer();
+//const DetailTimer = new timer();
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 export let keyData = "";
 export const saveKeyData = "MYKEY";
