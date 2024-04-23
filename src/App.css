@@ -114,29 +114,11 @@ input:checked + .slider:before {
 }
 
 .dark-mode {
-  background-color: #1e1e1e; /* Dark background color */
-  color: #fff; /* White text color */
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 .light-mode {
-  background-color: #fff; /* Light background color */
-  color: #000; /* Black text color */
-}
-
-.left-box {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  border-right: 20px solid #000; /* Black border on the right side */
-}
-
-.right-box {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  border-left: 2px solid #000; /* Black border on the left side */
+  background-color: #fff;
+  color: #000;
 }
