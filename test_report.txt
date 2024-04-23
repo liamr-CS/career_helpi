@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (46 ms)
+  ✕ renders learn react link (47 ms)
 
   ● renders learn react link
 
@@ -142,24 +142,24 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|----------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
------------------------|---------|----------|---------|---------|----------------------
-All files              |   26.15 |     37.5 |   10.71 |   26.15 |                      
- API-Output.tsx        |       0 |        0 |       0 |       0 |                      
- App.tsx               |   68.18 |       50 |   16.66 |   68.18 | 17,27,31-32,36,40,44 
- BaseAsk.tsx           |     100 |      100 |     100 |     100 |                      
- BasicQuestions.tsx    |       0 |      100 |       0 |       0 | 4-34                 
- DetailAsk.tsx         |     100 |      100 |     100 |     100 |                      
- DetailedQuestions.tsx |       0 |      100 |       0 |       0 | 7-36                 
- Timer.tsx             |       0 |        0 |       0 |       0 |                      
- index.tsx             |       0 |      100 |     100 |       0 | 7-19                 
- reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10                 
------------------------|---------|----------|---------|---------|----------------------
+-----------------------|---------|----------|---------|---------|----------------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
+-----------------------|---------|----------|---------|---------|----------------------------
+All files              |   26.47 |     37.5 |   10.34 |   26.47 |                            
+ API-Output.tsx        |       0 |        0 |       0 |       0 |                            
+ App.tsx               |      64 |       50 |   14.28 |      64 | 17,27,31-32,36,40,44,48-49 
+ BaseAsk.tsx           |     100 |      100 |     100 |     100 |                            
+ BasicQuestions.tsx    |       0 |      100 |       0 |       0 | 4-34                       
+ DetailAsk.tsx         |     100 |      100 |     100 |     100 |                            
+ DetailedQuestions.tsx |       0 |      100 |       0 |       0 | 7-36                       
+ Timer.tsx             |       0 |        0 |       0 |       0 |                            
+ index.tsx             |       0 |      100 |     100 |       0 | 7-19                       
+ reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10                       
+-----------------------|---------|----------|---------|---------|----------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.166 s
+Time:        3.208 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
