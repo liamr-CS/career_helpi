@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (47 ms)
+  ✕ renders learn react link (45 ms)
 
   ● renders learn react link
 
@@ -13,26 +13,32 @@ FAIL src/App.test.tsx
     [36m<body>[39m
       [36m<div>[39m
         [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
+          [33mclass[39m=[32m"App light-mode"[39m
         [36m>[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [0mLiam Roth[0m
-            [36m</p>[39m
-            [36m<p>[39m
-              [0mBen Bank[0m
-            [36m</p>[39m
-            [36m<p>[39m
-              [0mXander Clawson[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<a[39m
-              [33mhref[39m=[32m"https://liamr-cs.github.io/career_helpi/"[39m
-              [33mstyle[39m=[32m"position: absolute; top: 0px; left: 0px; border: 2px solid gray; padding: 8px; text-decoration: none; color: black; font-size: 18px;"[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"header"[39m
+          [36m>[39m
+            [36m<label[39m
+              [33mclass[39m=[32m"switch switch-left"[39m
             [36m>[39m
-              [0mHomepage[0m
-            [36m</a>[39m
+              [36m<input[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<span[39m
+                [33mclass[39m=[32m"slider"[39m
+              [36m/>[39m
+            [36m</label>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"dark-mode-toggle light-mode-text"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"App-logo"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quizzi-text"[39m
+            [36m>[39m
+              [0mQuizzi[0m
+            [36m</div>[39m
           [36m</div>[39m
           [36m<div>[39m
             [36m<div>[39m
@@ -139,9 +145,9 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|----------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
 -----------------------|---------|----------|---------|---------|----------------------
-All files              |   20.96 |    33.33 |   10.34 |   20.96 |                      
+All files              |   26.15 |     37.5 |   10.71 |   26.15 |                      
  API-Output.tsx        |       0 |        0 |       0 |       0 |                      
- App.tsx               |   57.89 |       50 |   14.28 |   57.89 | 16,24-30,36,42,88-95 
+ App.tsx               |   68.18 |       50 |   16.66 |   68.18 | 17,27,31-32,36,40,44 
  BaseAsk.tsx           |     100 |      100 |     100 |     100 |                      
  BasicQuestions.tsx    |       0 |      100 |       0 |       0 | 4-34                 
  DetailAsk.tsx         |     100 |      100 |     100 |     100 |                      
@@ -153,7 +159,7 @@ All files              |   20.96 |    33.33 |   10.34 |   20.96 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.12 s
+Time:        3.023 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
