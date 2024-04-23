@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  transition: background-color 0.8s ease;
 }
 
 .App-logo {
@@ -13,17 +14,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +25,118 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.quizzi-text {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 22px;
+  right: 120px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.light-mode-text::before {
+  content: "Light Mode";
+}
+
+.dark-mode-text::before {
+  content: "Dark Mode";
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #323232;
+  height: 70px;
+  z-index: 1;
+}
+
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  left: 1270px;
+  top: 20px;
+  z-index: 2;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: transform 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #5a5a5a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.dark-mode {
+  background-color: #1e1e1e; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.light-mode {
+  background-color: #fff; /* Light background color */
+  color: #000; /* Black text color */
+}
+
+.left-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-right: 20px solid #000; /* Black border on the right side */
+}
+
+.right-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border-left: 2px solid #000; /* Black border on the left side */
 }
