@@ -5,9 +5,10 @@ import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
 import Questions from './BasicQuestions';
 import DetQuestions from './DetailedQuestions';
-import timer from './Timer';
-
-const Basictimer = new timer();
+import Timer from "./Timer";
+import TimerParts from "./TimerParts";
+const basictimer = new Timer();
+const testTimer = new Timer();
 
 export let keyData = "";
 export const saveKeyData = "MYKEY";
@@ -57,6 +58,11 @@ function App() {
       </div>
       {!showBasicQuestions && !showDetailedQuestions ? (      
         <div>
+
+
+
+
+          
           <div>
             <h2>Basic Quiz Instructions:</h2>
             <BaseQsDes></BaseQsDes>
@@ -66,22 +72,30 @@ function App() {
           <div>
             <h2>Detailed Quiz Instructions:</h2>
             <DetailQsDes></DetailQsDes>
-          </div>
+          </div>   
+
+
+          <div>{testTimer.getCount()}</div>
+          <button onClick={() => testTimer.toggle((count: number) => console.log(count))}>Start/Stop</button>
+          <button onClick={() => testTimer.reset()}>Reset</button>
+
+
           <h1>TAKE THE DETAILED QUIZ HERE:</h1>
           <button onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
         </div>
       ) : showBasicQuestions ? (
         <div>
+          
           <h2>Basic Quiz Instructions:</h2>
           <BaseQsDes></BaseQsDes>
-          <button onClick={Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
+          <button onClick={() => basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
           <Questions></Questions>
         </div>
       ) : (
         <div>
           <h2>Detailed Quiz Instructions:</h2>
           <DetailQsDes></DetailQsDes>
-          <button onClick={Basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
+          <button onClick={() => basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
           <DetQuestions></DetQuestions>
         </div>
       )}
