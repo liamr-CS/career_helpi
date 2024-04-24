@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
-import Questions from './BasicQuestions';
 import DetQuestions from './DetailedQuestions';
 import timer from './Timer';
 import BasicPage from "./BasicQuestionsPage";
