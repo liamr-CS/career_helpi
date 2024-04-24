@@ -3,26 +3,26 @@ import Timer from './Timer'; // Import the Timer class
 
 const TimerParts: React.FC = () => {
     const [count, setCount] = useState<number>(0);
-    const [timer, setTimer] = useState<Timer>(new Timer());
+    const [testTimer, setTestTimer] = useState<Timer>(new Timer());
 
     const toggleTimer = () => {
-        timer.toggle((currentCount: number) => {
+        testTimer.toggle((currentCount: number) => {
             setCount(currentCount);
         });
     };
 
     const resetTimer = () => {
-        timer.reset();
+        testTimer.reset();
         setCount(0);
     };
 
     return (
         <div>
             <div>{count}</div>
-            <button onClick={toggleTimer}>Toggle Timer</button>
-            <button onClick={resetTimer}>Reset Timer</button>
+            <button onClick={toggleTimer}>Start/Stop</button>
+            <button onClick={resetTimer}>Reset</button>
         </div>
     );
 };
-
-export default TimerParts
+//requested help from GPT on lines: 6, 19-25
+export default TimerParts;

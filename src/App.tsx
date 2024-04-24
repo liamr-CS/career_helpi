@@ -10,6 +10,14 @@ import TimerParts from "./TimerParts";
 const basictimer = new Timer();
 const testTimer = new Timer();
 
+
+
+
+//the testTimer is a demo for how the function/class works, remove once all proper timers are implemented and finalized
+
+
+
+
 export let keyData = "";
 export const saveKeyData = "MYKEY";
 
@@ -44,7 +52,16 @@ function App() {
   const toggleDetailedQuestions = () => {
     setShowDetailedQuestions(!showDetailedQuestions);
   };
+  const [testTimer, setTestTimer] = useState<Timer>(new Timer());
 
+  const toggleTimer = () => {
+      testTimer.toggle((count: number) => {
+      });
+  };
+
+  const resetTimer = () => {
+      testTimer.reset();
+  };
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="header">
@@ -75,7 +92,7 @@ function App() {
           </div>   
 
 
-          <div>{testTimer.getCount()}</div>
+          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${testTimer.getCount()}`}>Click to show current time: {testTimer.getCount()}</button>
           <button onClick={() => testTimer.toggle((count: number) => console.log(count))}>Start/Stop</button>
           <button onClick={() => testTimer.reset()}>Reset</button>
 
@@ -110,5 +127,5 @@ function App() {
     </div>
   );
 }
-
+//requested help from GPT on lines: 87, 
 export default App;
