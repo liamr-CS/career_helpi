@@ -6,6 +6,7 @@ import DetailQsDes from './DetailAsk';
 import Questions from './BasicQuestions';
 import DetQuestions from './DetailedQuestions';
 import timer from './Timer';
+import BasicPage from "./BasicQuestionsPage";
 
 const Basictimer = new timer();
 
@@ -80,7 +81,7 @@ function App() {
           <h2>Basic Quiz Instructions:</h2>
           <BaseQsDes></BaseQsDes>
           <button onClick={Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
-          <Questions></Questions>
+          <BasicPage></BasicPage>
         </div>
       ) : (
         <div>
