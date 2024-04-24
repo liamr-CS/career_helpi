@@ -3,7 +3,7 @@ import Timer from './Timer'; // Import the Timer class
 
 const TimerParts: React.FC = () => {
     const [count, setCount] = useState<number>(0);
-    const [testTimer, setTestTimer] = useState<Timer>(new Timer());
+    const [testTimer] = useState<Timer>(new Timer());
 
     const toggleTimer = () => {
         testTimer.toggle((currentCount: number) => {
