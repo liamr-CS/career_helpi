@@ -88,7 +88,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #6dc5ff;
   transition: background-color 0.4s;
   border-radius: 34px;
 }
@@ -100,8 +100,8 @@
   width: 22px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
-  transition: transform 0.4s;
+  background-color: rgb(255, 217, 65);
+  transition: transform 0.4s, background-color 0.4s; /* Add background-color transition */
   border-radius: 50%;
 }
 
@@ -111,6 +111,8 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(20px);
+  background-color: #ccc; /* Change the background color here */
+  transition: transform 0.4s, background-color 0.4s; /* Add background-color transition */
 }
 
 .dark-mode {
@@ -121,4 +123,12 @@ input:checked + .slider:before {
 .light-mode {
   background-color: #fff;
   color: #000;
+}
+
+.quizzi-text {
+  cursor: default;
+}
+
+.quizzi-text:hover {
+  cursor: pointer;
 }

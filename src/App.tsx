@@ -52,6 +52,11 @@ function App() {
   const toggleDetailedQuestions = () => {
     setShowDetailedQuestions(!showDetailedQuestions);
   };
+
+  const navigateToHomepage = () => {
+    setShowBasicQuestions(false);
+    setShowDetailedQuestions(false);
+  };
   const [testTimer, setTestTimer] = useState<Timer>(new Timer());
 
   const toggleTimer = () => {
@@ -71,7 +76,7 @@ function App() {
         </label>
         <div className={`dark-mode-toggle ${darkMode ? 'dark-mode-text' : 'light-mode-text'}`} onClick={toggleDarkMode}></div>
         <div className="App-logo"></div>
-        <div className="quizzi-text">Quizzi</div>
+        <div className="quizzi-text" onClick={navigateToHomepage}>Quizzi</div>
       </div>
       {!showBasicQuestions && !showDetailedQuestions ? (      
         <div>
