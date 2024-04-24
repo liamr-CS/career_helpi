@@ -5,9 +5,18 @@ import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
 import Questions from './BasicQuestions';
 import DetQuestions from './DetailedQuestions';
-import timer from './Timer';
+import Timer from "./Timer";
+import TimerParts from "./TimerParts";
+const basictimer = new Timer();
+const testTimer = new Timer();
 
-const Basictimer = new timer();
+
+
+
+//the testTimer is a demo for how the function/class works, remove once all proper timers are implemented and finalized
+
+
+
 
 export let keyData = "";
 export const saveKeyData = "MYKEY";
@@ -48,7 +57,16 @@ function App() {
     setShowBasicQuestions(false);
     setShowDetailedQuestions(false);
   };
+  const [testTimer, setTestTimer] = useState<Timer>(new Timer());
 
+  const toggleTimer = () => {
+      testTimer.toggle((count: number) => {
+      });
+  };
+
+  const resetTimer = () => {
+      testTimer.reset();
+  };
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="header">
@@ -62,6 +80,11 @@ function App() {
       </div>
       {!showBasicQuestions && !showDetailedQuestions ? (      
         <div>
+
+
+
+
+          
           <div>
             <h2>Basic Quiz Instructions:</h2>
             <BaseQsDes></BaseQsDes>
@@ -71,22 +94,30 @@ function App() {
           <div>
             <h2>Detailed Quiz Instructions:</h2>
             <DetailQsDes></DetailQsDes>
-          </div>
+          </div>   
+
+
+          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${testTimer.getCount()}`}>Click to show current time: {testTimer.getCount()}</button>
+          <button onClick={() => testTimer.toggle((count: number) => console.log(count))}>Start/Stop</button>
+          <button onClick={() => testTimer.reset()}>Reset</button>
+
+
           <h1>TAKE THE DETAILED QUIZ HERE:</h1>
           <button onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
         </div>
       ) : showBasicQuestions ? (
         <div>
+          
           <h2>Basic Quiz Instructions:</h2>
           <BaseQsDes></BaseQsDes>
-          <button onClick={Basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
+          <button onClick={() => basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
           <Questions></Questions>
         </div>
       ) : (
         <div>
           <h2>Detailed Quiz Instructions:</h2>
           <DetailQsDes></DetailQsDes>
-          <button onClick={Basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
+          <button onClick={() => basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
           <DetQuestions></DetQuestions>
         </div>
       )}
@@ -101,5 +132,5 @@ function App() {
     </div>
   );
 }
-
+//requested help from GPT on lines: 87, 
 export default App;
