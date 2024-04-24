@@ -6,9 +6,9 @@ import DetailQsDes from './DetailAsk';
 import DetQuestions from './DetailedQuestions';
 import Timer from "./Timer";
 import TimerParts from "./TimerParts";
+import BasicPage from "./BasicQuestionsPage";
 const basictimer = new Timer();
 const testTimer = new Timer();
-
 
 
 
@@ -16,8 +16,6 @@ const testTimer = new Timer();
 
 
 
-import timer from './Timer';
-import BasicPage from "./BasicQuestionsPage";
 
 const Basictimer = new timer();
 
