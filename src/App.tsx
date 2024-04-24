@@ -3,20 +3,16 @@ import React, { useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
-import Questions from './BasicQuestions';
 import DetQuestions from './DetailedQuestions';
 import Timer from "./Timer";
-import TimerParts from "./TimerParts";
+//import TimerParts from "./TimerParts";
+import BasicPage from "./BasicQuestionsPage";
 const basictimer = new Timer();
-const testTimer = new Timer();
-
+//const testTimer = new Timer();
 
 
 
 //the testTimer is a demo for how the function/class works, remove once all proper timers are implemented and finalized
-
-
-
 
 export let keyData = "";
 export const saveKeyData = "MYKEY";
@@ -57,8 +53,8 @@ function App() {
     setShowBasicQuestions(false);
     setShowDetailedQuestions(false);
   };
-  const [testTimer, setTestTimer] = useState<Timer>(new Timer());
-
+  const [testTimer] = useState<Timer>(new Timer());
+/** 
   const toggleTimer = () => {
       testTimer.toggle((count: number) => {
       });
@@ -67,6 +63,8 @@ function App() {
   const resetTimer = () => {
       testTimer.reset();
   };
+
+**/
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="header">
@@ -111,7 +109,7 @@ function App() {
           <h2>Basic Quiz Instructions:</h2>
           <BaseQsDes></BaseQsDes>
           <button onClick={() => basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
-          <Questions></Questions>
+          <BasicPage></BasicPage>
         </div>
       ) : (
         <div>
