@@ -40,10 +40,10 @@ function DetailedReport({answers} : DetailedReportProps) {
         const completion = await openai.chat.completions.create({
         messages: [{ role: "system", 
             content: "You create reports based on the results of a career assessment. The user has inputted the following results to the" + 
-            "following questions:\nDo you enjoy working with your hands?" 
-            + answer1 + "\nAre you interested in technology?" + answer2 + "\nDo you like solving puzzles or problems?" + answer3
-            + "\nDo you prefer working alone or in a team?" + answer4  + "\nDo you enjoy being creative?" + answer5
-            + "\nAre you good at analyzing data or information?" + answer6 + "\nDo you have clear goals for your future career?" + answer7 + 
+            "following questions:\nOn a scale of one to five, how much do you like programming?" 
+            + answer1 + "\nOn a scale of strongly agree to strongly disagree, are you a leader?" + answer2 + "\nRespond with how correct the following statement is: reality is objective." + answer3
+            + "\nRespond with how often you do the following: think about the future." + answer4  + "\nCan you see yourself in this career: a fast-paced work environment?" + answer5
+            + "\nDoes the following sound like you: I want a good-work life balance?" + answer6 + "\nWhich one of the following careers sounds the most appealing?" + answer7 + 
             "Please model your response in the following format:\nBest suited for:\nWill do well in:\nCan adapt to:\nUnlikely suited for:\nPlease remember to include \"\n\" in your response so all four categories appear on separate line as well as multiple careers for each category."}],
         model: "gpt-4-turbo",
         });
