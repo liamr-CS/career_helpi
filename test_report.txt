@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (48 ms)
+  ✕ renders learn react link (49 ms)
 
   ● renders learn react link
 
@@ -29,6 +29,86 @@ FAIL src/App.test.tsx
               [36m/>[39m
             [36m</label>[39m
             [36m<div[39m
+              [33mclass[39m=[32m"centered-text"[39m
+            [36m>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0mCAREER QUIZ[0m
+              [36m</h1>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"subtext-text"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0mFind out your future career now![0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"basicquiz-text"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0mBASIC QUIZ[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"detailedquiz-text"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0mDETAILED QUIZ[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"basicquizdesc-text"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0m- Seven simple questions designed to unveil your future career path.[0m
+              [36m</p>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0m- Explore your interests and skills through this career-focused quiz.[0m
+              [36m</p>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0m- Unlock insights that could shape your professional journey.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"detailedquizdesc-text"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0m- Seven detailed questions designed to unveil your future career path.[0m
+              [36m</p>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0m- Explore your passions and skills through this comprehensive quiz.[0m
+              [36m</p>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m""[39m
+              [36m>[39m
+                [0m- Gain insights into potential career paths with each question.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"repositionable-box "[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"mirrored-box "[39m
+            [36m/>[39m
+            [36m<div[39m
               [33mclass[39m=[32m"dark-mode-toggle light-mode-text"[39m
             [36m/>[39m
             [36m<div[39m
@@ -41,73 +121,24 @@ FAIL src/App.test.tsx
             [36m</div>[39m
           [36m</div>[39m
           [36m<div>[39m
-            [36m<div>[39m
-              [36m<h2>[39m
-                [0mBasic Quiz Instructions:[0m
-              [36m</h2>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"basic-questions-description"[39m
-              [36m>[39m
-                [36m<p>[39m
-                  [0m-Answer these questions as accurately as possible while ensuring not to skip any.[0m
-                [36m</p>[39m
-                [36m<p>[39m
-                  [0m-The basic career assessment consists of a mix of yes-and-no and multiple choice questions that you will answer.[0m
-                [36m</p>[39m
-                [36m<p>[39m
-                  [0m-The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.[0m
-                [36m</p>[39m
-                [36m<p>[39m
-                  [0mAccess the basic career assessment with the button below![0m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<h1>[39m
-              [0mTAKE THE BASIC QUIZ HERE:[0m
-            [36m</h1>[39m
-            [36m<button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"button-basic-quiz"[39m
+            [36m>[39m
               [36m<h3>[39m
                 [0mBasic Quiz[0m
               [36m</h3>[39m
             [36m</button>[39m
-            [36m<div>[39m
-              [36m<h2>[39m
-                [0mDetailed Quiz Instructions:[0m
-              [36m</h2>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"basic-questions-description"[39m
-              [36m>[39m
-                [36m<p>[39m
-                  [0m-The detailed career assessment consists of a mix of rating, level-of-agreement, and yes-and-no questions that you will answer.[0m
-                [36m</p>[39m
-                [36m<p>[39m
-                  [0m-Answer these questions as accurately as possible while ensuring not to skip any. You are not required to go in a specific order when answering.[0m
-                [36m</p>[39m
-                [36m<p>[39m
-                  [0m-The answers provided will be used to calculate a suitable work environment for the tester and provide a list of jobs that do well in that environment.[0m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<button>[39m
-              [0mClick to show current time: [0m
-              [0m0[0m
-            [36m</button>[39m
-            [36m<button>[39m
-              [0mStart/Stop[0m
-            [36m</button>[39m
-            [36m<button>[39m
-              [0mReset[0m
-            [36m</button>[39m
-            [36m<h1>[39m
-              [0mTAKE THE DETAILED QUIZ HERE:[0m
-            [36m</h1>[39m
-            [36m<button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"button-detailed-quiz"[39m
+            [36m>[39m
               [36m<h3>[39m
                 [0mDetailed Quiz[0m
               [36m</h3>[39m
             [36m</button>[39m
           [36m</div>[39m
-          [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"api-key-entry"[39m
+          [36m>[39m
             [36m<form[39m
               [33mclass[39m=[32m""[39m
             [36m>[39m
@@ -152,27 +183,27 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-------------------------|---------|----------|---------|---------|-----------------------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                 
-------------------------|---------|----------|---------|---------|-----------------------------------
-All files               |   15.38 |    10.34 |      10 |   15.48 |                                   
- API-Output.tsx         |       0 |        0 |       0 |       0 |                                   
- App.tsx                |   53.12 |       50 |    7.69 |   54.83 | 22,32,36-37,41,45,49,53-54,98-118 
- BaseAsk.tsx            |     100 |      100 |     100 |     100 |                                   
- BasicQuestions.tsx     |       0 |      100 |       0 |       0 | 11-47                             
- BasicQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-48                              
- ChatGPTBasic.tsx       |       0 |        0 |       0 |       0 | 19-56                             
- DetailAsk.tsx          |     100 |      100 |     100 |     100 |                                   
- DetailedQuestions.tsx  |       0 |      100 |       0 |       0 | 7-36                              
- Timer.tsx              |   21.73 |        0 |   28.57 |   21.73 | 15-47                             
- TimerParts.tsx         |       0 |      100 |       0 |       0 | 4-19                              
- index.tsx              |       0 |      100 |     100 |       0 | 7-19                              
- reportWebVitals.ts     |       0 |        0 |       0 |       0 | 3-10                              
-------------------------|---------|----------|---------|---------|-----------------------------------
+------------------------|---------|----------|---------|---------|---------------------------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                     
+------------------------|---------|----------|---------|---------|---------------------------------------
+All files               |   13.15 |    39.62 |    4.34 |   13.15 |                                       
+ API-Output.tsx         |       0 |        0 |       0 |       0 |                                       
+ App.tsx                |   57.14 |       70 |   11.11 |   57.14 | 22,32-33,37-38,42,46,50,54-55,113-120 
+ BaseAsk.tsx            |       0 |      100 |       0 |       0 | 4                                     
+ BasicQuestions.tsx     |       0 |      100 |       0 |       0 | 11-47                                 
+ BasicQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-48                                  
+ ChatGPTBasic.tsx       |       0 |        0 |       0 |       0 | 19-56                                 
+ DetailAsk.tsx          |       0 |      100 |       0 |       0 | 4                                     
+ DetailedQuestions.tsx  |       0 |      100 |       0 |       0 | 7-36                                  
+ Timer.tsx              |   17.39 |        0 |   14.28 |   17.39 | 15-52                                 
+ TimerParts.tsx         |       0 |      100 |       0 |       0 | 4-19                                  
+ index.tsx              |       0 |      100 |     100 |       0 | 7-19                                  
+ reportWebVitals.ts     |       0 |        0 |       0 |       0 | 3-10                                  
+------------------------|---------|----------|---------|---------|---------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.306 s
+Time:        3.371 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
