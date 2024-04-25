@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (61 ms)
+  ✕ renders learn react link (45 ms)
 
   ● renders learn react link
 
@@ -136,29 +136,6 @@ FAIL src/App.test.tsx
               [36m</h3>[39m
             [36m</button>[39m
           [36m</div>[39m
-          [36m<div>[39m
-            [36m<form[39m
-              [33mclass[39m=[32m""[39m
-            [36m>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-label"[39m
-              [36m>[39m
-                [0mAPI Key:[0m
-              [36m</label>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-control"[39m
-                [33mplaceholder[39m=[32m"Insert API Key Here"[39m
-                [33mtype[39m=[32m"password"[39m
-              [36m/>[39m
-              [36m<br />[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"Submit-Button btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-            [36m</form>[39m
-          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -196,16 +173,16 @@ go away.[0m
 ---------------------------|---------|----------|---------|---------|---------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                     
 ---------------------------|---------|----------|---------|---------|---------------------------------------
-All files                  |      10 |    30.88 |    3.84 |      10 |                                       
+All files                  |     8.4 |    31.65 |    2.24 |    8.43 |                                       
  API-Output.tsx            |       0 |        0 |       0 |       0 |                                       
- App.tsx                   |   57.14 |       70 |   11.11 |   57.14 | 22,33-34,38-39,43,47,51,55-56,114-121 
+ App.tsx                   |   57.14 |    69.84 |   11.11 |   57.14 | 22,33-34,38-39,43,47,51,55-56,114-121 
  BaseAsk.tsx               |       0 |      100 |       0 |       0 | 4                                     
- BasicQuestions.tsx        |       0 |      100 |       0 |       0 | 11-47                                 
+ BasicQuestions.tsx        |       0 |      100 |       0 |       0 | 10-156                                
  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-48                                  
  ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-56                                 
  ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-56                                 
  DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                                     
- DetailedQuestions.tsx     |       0 |      100 |       0 |       0 | 9-45                                  
+ DetailedQuestions.tsx     |       0 |      100 |       0 |       0 | 10-277                                
  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-47                                  
  Timer.tsx                 |   17.39 |        0 |   14.28 |   17.39 | 15-52                                 
  TimerParts.tsx            |       0 |      100 |       0 |       0 | 4-19                                  
@@ -215,5 +192,5 @@ All files                  |      10 |    30.88 |    3.84 |      10 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.5 s
+Time:        3.637 s
 Ran all test suites.
