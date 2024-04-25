@@ -63,7 +63,7 @@ function BasicReport({answers} : BasicReportProps) {
                 <p>{reportSections[1]}</p>
                 <h2>Can adapt to:</h2>
                 <p>{reportSections[2]}</p>
-                <h2>Unlikely unsuited for</h2>
+                <h2>Unlikely suited for</h2>
                 <p>{reportSections[3]}</p>
             </div>
         </div>
