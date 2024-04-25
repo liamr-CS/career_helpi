@@ -53,7 +53,7 @@ function App() {
     setShowBasicQuestions(false);
     setShowDetailedQuestions(false);
   };
-  const [testTimer] = useState<Timer>(new Timer());
+  const [testTimer] = useState<Timer>(new Timer());//this is test timer
 /** 
   const toggleTimer = () => {
       testTimer.toggle((count: number) => {
