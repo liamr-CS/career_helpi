@@ -40,7 +40,7 @@
 .dark-mode-toggle {
   position: fixed;
   top: 22px;
-  right: 120px;
+  right: 110px;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
@@ -66,11 +66,11 @@
 }
 
 .switch {
-  position: fixed;
+  position: absolute;
   display: inline-block;
   width: 50px;
   height: 30px;
-  left: 1270px;
+  right: 3%;
   top: 20px;
   z-index: 2;
 }
@@ -88,7 +88,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #6dc5ff;
+  background-color: #98d5fe;
   transition: background-color 0.4s;
   border-radius: 34px;
 }
@@ -100,8 +100,8 @@
   width: 22px;
   left: 4px;
   bottom: 4px;
-  background-color: rgb(255, 217, 65);
-  transition: transform 0.4s, background-color 0.4s; /* Add background-color transition */
+  background-color: rgb(250, 220, 99);
+  transition: transform 0.4s, background-color 0.4s;
   border-radius: 50%;
 }
 
@@ -111,16 +111,22 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(20px);
-  background-color: #ccc; /* Change the background color here */
-  transition: transform 0.4s, background-color 0.4s; /* Add background-color transition */
+  background-color: #e1e1e1;
+  transition: transform 0.4s, background-color 0.4s;
 }
 
-.dark-mode {
+body {
+  transition: background-color 0.8s ease, color 0.8s ease;
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode {
   background-color: #1e1e1e;
   color: #fff;
 }
 
-.light-mode {
+body.light-mode {
   background-color: #fff;
   color: #000;
 }
@@ -131,4 +137,167 @@ input:checked + .slider:before {
 
 .quizzi-text:hover {
   cursor: pointer;
+}
+
+.repositionable-box {
+  position: fixed;
+  top: 300px;
+  left: 60px;
+  width: 560px;
+  height: 300px;
+  border-radius: 20px;
+  z-index: 3;
+  transition: border-color 0.8s ease, background-color 0.8s ease;
+}
+
+.light-mode .repositionable-box {
+  border: 8px solid #1e1e1e;
+}
+
+.dark-mode .repositionable-box {
+  border: 8px solid #FFF;
+}
+
+.mirrored-box {
+  position: fixed;
+  top: 300px;
+  right: 60px;
+  width: 560px;
+  height: 300px;
+  border-radius: 20px;
+  z-index: 3;
+  transition: border-color 0.8s ease, background-color 0.8s ease;
+}
+
+.light-mode .mirrored-box {
+  border: 8px solid #1e1e1e;
+}
+
+.dark-mode .mirrored-box {
+  border: 8px solid #FFF;
+}
+
+.centered-text {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.button-basic-quiz {
+  position: absolute;
+  top: 530px;
+  right: 990px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+.button-basic-quiz:hover {
+  transform: scale(1.05);
+}
+
+.light-mode .button-basic-quiz {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .button-basic-quiz {
+  background-color: #fff;
+  color: #333;
+}
+
+.button-detailed-quiz {
+  position: absolute;
+  top: 530px;
+  right: 280px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+.button-detailed-quiz:hover {
+  transform: scale(1.05);
+}
+
+.light-mode .button-detailed-quiz {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .button-detailed-quiz {
+  background-color: #fff;
+  color: #333;
+}
+
+.api-key-entry {
+  display: none; /* remove when needed visibility */
+}
+
+.subtext-text {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.basicquiz-text {
+  position: absolute;
+  top: 345px;
+  left: 220px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.detailedquiz-text {
+  position: absolute;
+  top: 345px;
+  left: 950px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.basicquizdesc-text {
+  position: absolute;
+  top: 435px;
+  left: 315px;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.detailedquizdesc-text {
+  position: absolute;
+  top: 435px;
+  right: -87px;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
