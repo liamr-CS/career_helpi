@@ -54,8 +54,8 @@ function App() {
     setShowBasicQuestions(false);
     setShowDetailedQuestions(false);
   };
-  const [testTimer] = useState<Timer>(new Timer());
-/** 
+ /* const [testTimer] = useState<Timer>(new Timer());
+
   const toggleTimer = () => {
       testTimer.toggle((count: number) => {
       });
@@ -103,34 +103,11 @@ function App() {
       </div>
       {!showBasicQuestions && !showDetailedQuestions ? (
         <div>
-
-
-
-
-          
-          <div>
-            <h2>Basic Quiz Instructions:</h2>
-            <BaseQsDes></BaseQsDes>
-          </div>
-          <h1>TAKE THE BASIC QUIZ HERE:</h1>
-          <button onClick={toggleBasicQuestions}><h3>Basic Quiz</h3></button>
-          <div>
-            <h2>Detailed Quiz Instructions:</h2>
-            <DetailQsDes></DetailQsDes>
-          </div>   
-
-
-          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${testTimer.getCount()}`}>Click to show current time: {testTimer.getCount()}</button>
-          <button onClick={() => testTimer.toggle((count: number) => console.log(count))}>Start/Stop</button>
-          <button onClick={() => testTimer.reset()}>Reset</button>
-
-
-          <h1>TAKE THE DETAILED QUIZ HERE:</h1>
-          <button onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
+          <button className="button-basic-quiz" onClick={toggleBasicQuestions}><h3>Basic Quiz</h3></button>
+          <button className="button-detailed-quiz" onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
         </div>
       ) : showBasicQuestions ? (
         <div>
-          
           <h2>Basic Quiz Instructions:</h2>
           <BaseQsDes></BaseQsDes>
           <button onClick={() => basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
