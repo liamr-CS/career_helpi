@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (41 ms)
+  ✕ renders learn react link (42 ms)
 
   ● renders learn react link
 
@@ -173,9 +173,9 @@ go away.[0m
 ---------------------------|---------|----------|---------|---------|---------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                     
 ---------------------------|---------|----------|---------|---------|---------------------------------------
-All files                  |     8.4 |    31.65 |    2.24 |    8.43 |                                       
+All files                  |    7.84 |    32.59 |    1.98 |       8 |                                       
  API-Output.tsx            |       0 |        0 |       0 |       0 |                                       
- App.tsx                   |   57.14 |    69.84 |   11.11 |   57.14 | 22,33-34,38-39,43,47,51,55-56,114-121 
+ App.tsx                   |   48.57 |    69.84 |    7.69 |   54.83 | 21,32-33,37-38,42,46,50,54-55,119-128 
  BaseAsk.tsx               |       0 |      100 |       0 |       0 | 4                                     
  BasicQuestions.tsx        |       0 |      100 |       0 |       0 | 10-156                                
  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-48                                  
@@ -184,13 +184,13 @@ All files                  |     8.4 |    31.65 |    2.24 |    8.43 |
  DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                                     
  DetailedQuestions.tsx     |       0 |      100 |       0 |       0 | 10-277                                
  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-47                                  
- Timer.tsx                 |   17.39 |        0 |   14.28 |   17.39 | 15-52                                 
- TimerParts.tsx            |       0 |      100 |       0 |       0 | 4-19                                  
+ Timer.tsx                 |   16.66 |        0 |   14.28 |   16.66 | 13-44                                 
+ TimerParts.tsx            |       0 |      100 |       0 |       0 | 8-55                                  
  index.tsx                 |       0 |      100 |     100 |       0 | 7-19                                  
  reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10                                  
 ---------------------------|---------|----------|---------|---------|---------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.279 s
+Time:        3.645 s
 Ran all test suites.
