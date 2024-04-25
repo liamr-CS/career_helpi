@@ -6,8 +6,8 @@ interface TimerPartsProps {
 }
 
 const TimerParts: React.FC<TimerPartsProps> = ({ updateCount }) => {
-  const [basicTimer, setBasicTimer] = useState<Timer>(new Timer());
-  const [detailedTimer, setDetailedTimer] = useState<Timer>(new Timer());
+  const [basicTimer] = useState<Timer>(new Timer());
+  const [detailedTimer] = useState<Timer>(new Timer());
 
   useEffect(() => {
     const basicInterval = setInterval(() => {
