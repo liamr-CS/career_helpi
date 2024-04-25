@@ -1,13 +1,13 @@
 import { Button, Form } from "react-bootstrap";
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
 import Timer from "./Timer";
+import TimerParts from "./TimerParts";
 //import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
 import DetailedQuestionsPage from "./DetailedQuestionsPage";
-const basictimer = new Timer();
 //const testTimer = new Timer();
 
 
@@ -67,6 +67,28 @@ function App() {
   };
 
 **/
+const [count, setCount] = useState<number>(0);
+  const basictimer = new Timer();
+  const detailedtimer = new Timer();
+
+  const updateCount = (newCount: number) => {
+    setCount(newCount); // Update count in main component
+  };
+
+  const toggleBasicTimer = () => {
+    basictimer.toggle((currentCount: number) => {
+      // Callback function to update count in main component
+      updateCount(currentCount);
+    });
+  };
+
+  const toggleDetailedTimer = () => {
+    detailedtimer.toggle((currentCount: number) => {
+      // Callback function to update count in main component
+      updateCount(currentCount);
+    });
+  };
+
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="header">
@@ -111,14 +133,16 @@ function App() {
         <div>
           <h2>Basic Quiz Instructions:</h2>
           <BaseQsDes></BaseQsDes>
-          <button onClick={() => basictimer.toggle}>Start/Stop Basic Quiz Timer</button>
+          <button onClick={() => { console.log('Button clicked'); basictimer.toggle((count) => console.log(count)); }}>Start/Stop Basic Quiz Timer</button>
+          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${basictimer.getCount()}`}>Click to show elapsed time: {basictimer.getCount()}</button>
           <BasicPage></BasicPage>
         </div>
       ) : (
         <div>
           <h2>Detailed Quiz Instructions:</h2>
           <DetailQsDes></DetailQsDes>
-          <button onClick={() => basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
+          <button onClick={() => { console.log('Button clicked'); detailedtimer.toggle((count) => console.log(count)); }}>Start/Stop Detailed Quiz Timer</button>
+          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${detailedtimer.getCount()}`}>Click to show elapsed time: {detailedtimer.getCount()}</button>
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>
       )}
