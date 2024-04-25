@@ -1,36 +1,45 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
+interface Props {
+    onChange: (key: string, value: string) => void;
+}
 
-
-function DetQuestions () {
+function DetQuestions ({onChange} : Props) {
     const [danswer1, setDAnswer1] = useState<string>("");
     function updateDAnswer1(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer1(event.target.value);
+        onChange("answer1", event.target.value)
     }
     const [danswer2, setDAnswer2] = useState<string>("");
     function updateDAnswer2(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer2(event.target.value);
+        onChange("answer2", event.target.value)
     }
     const [danswer3, setDAnswer3] = useState<string>("");
     function updateDAnswer3(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer3(event.target.value);
+        onChange("answer3", event.target.value)
     }
     const [danswer4, setDAnswer4] = useState<string>("");
     function updateDAnswer4(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer4(event.target.value);
+        onChange("answer4", event.target.value)
     }
     const [danswer5, setDAnswer5] = useState<string>("");
     function updateDAnswer5(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer5(event.target.value);
+        onChange("answer5", event.target.value)
     }
     const [danswer6, setDAnswer6] = useState<string>("");
     function updateDAnswer6(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer6(event.target.value);
+        onChange("answer6", event.target.value)
     }
     const [danswer7, setDAnswer7] = useState<string>("");
     function updateDAnswer7(event: React.ChangeEvent<HTMLInputElement>) {
         setDAnswer7(event.target.value);
+        onChange("answer7", event.target.value)
     }
 
     return (
@@ -83,36 +92,36 @@ function DetQuestions () {
                         type="radio"
                         onChange={updateDAnswer2}
                         label="Strongly Agree"
-                        value="1"
-                        checked={danswer2 === "1"}
+                        value="Strongly Agree"
+                        checked={danswer2 === "Strongly Agree"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer2}
                         label="Agree"
-                        value="2"
-                        checked={danswer2 === "2"}
+                        value="Agree"
+                        checked={danswer2 === "Agree"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer2}
                         label="Neutral"
-                        value="3"
-                        checked={danswer2 === "3"}
+                        value="Neutral"
+                        checked={danswer2 === "Neutral"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer2}
                         label="Disagree"
-                        value="4"
-                        checked={danswer2 === "4"}
+                        value="Disagree"
+                        checked={danswer2 === "Disagree"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer2}
                         label="Strongly Disagree"
-                        value="5"
-                        checked={danswer2 === "5"}
+                        value="Strongly Disagree"
+                        checked={danswer2 === "Strongly Disagree"}
                     />
             </div>
             <p>
@@ -123,36 +132,36 @@ function DetQuestions () {
                         type="radio"
                         onChange={updateDAnswer3}
                         label="100% correct"
-                        value="1"
-                        checked={danswer3 === "1"}
+                        value="100% correct"
+                        checked={danswer3 === "100% correct"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer3}
                         label="75% correct"
-                        value="2"
-                        checked={danswer3 === "2"}
+                        value="75% correct"
+                        checked={danswer3 === "75% correct"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer3}
                         label="50% correct"
-                        value="3"
-                        checked={danswer3 === "3"}
+                        value="50% correct"
+                        checked={danswer3 === "50% correct"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer3}
                         label="25% correct"
-                        value="4"
-                        checked={danswer3 === "4"}
+                        value="25% correct"
+                        checked={danswer3 === "25% correct"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer3}
                         label="0% correct"
-                        value="5"
-                        checked={danswer3 === "5"}
+                        value="0% correct"
+                        checked={danswer3 === "0% correct"}
                     />
             </div>
             <p>
@@ -163,36 +172,36 @@ function DetQuestions () {
                         type="radio"
                         onChange={updateDAnswer4}
                         label="All the time"
-                        value="1"
-                        checked={danswer4 === "1"}
+                        value="All the time"
+                        checked={danswer4 === "All the time"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer4}
                         label="A lot of the time"
-                        value="2"
-                        checked={danswer4 === "2"}
+                        value="A lot of the time"
+                        checked={danswer4 === "A lot of the time"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer4}
                         label="Sometimes"
-                        value="3"
-                        checked={danswer4 === "3"}
+                        value="Sometimes"
+                        checked={danswer4 === "Sometimes"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer4}
                         label="Not very often"
-                        value="4"
-                        checked={danswer4 === "4"}
+                        value="Not very often"
+                        checked={danswer4 === "Not very often"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer4}
                         label="Never"
-                        value="5"
-                        checked={danswer4 === "5"}
+                        value="Never"
+                        checked={danswer4 === "Never"}
                     />
             </div>
             <p>
@@ -203,22 +212,22 @@ function DetQuestions () {
                         type="radio"
                         onChange={updateDAnswer5}
                         label="Yes"
-                        value="1"
-                        checked={danswer5 === "1"}
+                        value="Yes"
+                        checked={danswer5 === "Yes"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer5}
                         label="Maybe"
-                        value="2"
-                        checked={danswer5 === "2"}
+                        value="Maybe"
+                        checked={danswer5 === "Maybe"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer5}
                         label="No"
-                        value="3"
-                        checked={danswer5 === "3"}
+                        value="No"
+                        checked={danswer5 === "No"}
                     />
             </div>
             <p>
@@ -229,22 +238,22 @@ function DetQuestions () {
                         type="radio"
                         onChange={updateDAnswer6}
                         label="That sounds like me"
-                        value="1"
-                        checked={danswer6 === "1"}
+                        value="That sounds like me"
+                        checked={danswer6 === "That sounds like me"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer6}
                         label="That kind of sounds like me"
-                        value="2"
-                        checked={danswer6 === "2"}
+                        value="That kind of sounds like me"
+                        checked={danswer6 === "That kind of sounds like me"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer6}
                         label="No, that does not sound like me"
-                        value="3"
-                        checked={danswer6 === "3"}
+                        value="No, that does not sound like me"
+                        checked={danswer6 === "No, that does not sound like me"}
                     />
             </div>
             <p>
@@ -255,29 +264,29 @@ function DetQuestions () {
                         type="radio"
                         onChange={updateDAnswer7}
                         label="Carpenter"
-                        value="1"
-                        checked={danswer7 === "1"}
+                        value="Carpenter"
+                        checked={danswer7 === "Carpenter"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer7}
                         label="Tailor"
-                        value="2"
-                        checked={danswer7 === "2"}
+                        value="Tailor"
+                        checked={danswer7 === "Tailor"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer7}
                         label="Construction Worker"
-                        value="3"
-                        checked={danswer7 === "3"}
+                        value="Construction Worker"
+                        checked={danswer7 === "Construction Worker"}
                     />
                 <Form.Check
                         type="radio"
                         onChange={updateDAnswer7}
                         label="Jeweler"
-                        value="4"
-                        checked={danswer7 === "4"}
+                        value="Jeweler"
+                        checked={danswer7 === "Jeweler"}
                     />
             </div>
         </div>
