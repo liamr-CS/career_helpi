@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
-import DetQuestions from './DetailedQuestions';
 import Timer from "./Timer";
 //import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
+import DetailedQuestionsPage from "./DetailedQuestionsPage";
 const basictimer = new Timer();
 //const testTimer = new Timer();
 
@@ -118,7 +118,7 @@ function App() {
           <h2>Detailed Quiz Instructions:</h2>
           <DetailQsDes></DetailQsDes>
           <button onClick={() => basictimer.toggle}>Start/Stop Detailed Quiz Timer</button>
-          <DetQuestions></DetQuestions>
+          <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>
       )}
       <div className="api-key-entry">
