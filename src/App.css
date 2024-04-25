@@ -307,3 +307,28 @@ body.light-mode {
   z-index: -10;
   transition: opacity 0.3s ease;
 }
+
+.progress-bar-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+}
+
+.progress-bar-container {
+  width: 40%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 30px;
+  border: 20px transparent;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 15px;
+  background-color: #28a745; /* Green color */
+  transition: width 1.2s ease-in-out; /* Changed transition timing */
+}
+
+.api-key-container {
+  margin-top: -140px;
+  margin-left: 1090px;
+}
