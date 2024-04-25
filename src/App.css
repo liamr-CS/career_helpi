@@ -243,10 +243,6 @@ body.light-mode {
   color: #333;
 }
 
-.api-key-entry {
-  display: none; /* remove when needed visibility */
-}
-
 .subtext-text {
   position: absolute;
   top: 210px;

@@ -121,7 +121,7 @@ function App() {
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>
       )}
-      <div className="api-key-entry">
+      <div>
         <Form>
           <Form.Label>API Key:</Form.Label>
           <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
