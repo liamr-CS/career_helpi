@@ -27,6 +27,7 @@ function App() {
   const [showBasicQuestions, setShowBasicQuestions] = useState(false);
   const [showDetailedQuestions, setShowDetailedQuestions] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
