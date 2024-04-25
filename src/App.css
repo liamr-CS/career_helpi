@@ -147,6 +147,7 @@ body.light-mode {
   height: 300px;
   border-radius: 20px;
   z-index: 3;
+  pointer-events: none;
   transition: border-color 0.8s ease, background-color 0.8s ease;
 }
 
@@ -166,6 +167,7 @@ body.light-mode {
   height: 300px;
   border-radius: 20px;
   z-index: 3;
+  pointer-events: none;
   transition: border-color 0.8s ease, background-color 0.8s ease;
 }
 
@@ -185,6 +187,7 @@ body.light-mode {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .button-basic-quiz {
@@ -251,6 +254,7 @@ body.light-mode {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .basicquiz-text {
@@ -261,6 +265,7 @@ body.light-mode {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .detailedquiz-text {
@@ -271,6 +276,7 @@ body.light-mode {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .basicquizdesc-text {
@@ -281,6 +287,7 @@ body.light-mode {
   text-align: left;
   font-size: 14px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .detailedquizdesc-text {
@@ -291,9 +298,12 @@ body.light-mode {
   text-align: left;
   font-size: 14px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 .fade-out {
   opacity: 0;
+  pointer-events: none;
+  z-index: -10;
   transition: opacity 0.3s ease;
 }
