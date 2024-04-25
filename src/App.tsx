@@ -1,10 +1,9 @@
 import { Button, Form } from "react-bootstrap";
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
 import Timer from "./Timer";
-import TimerParts from "./TimerParts";
 //import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
 import DetailedQuestionsPage from "./DetailedQuestionsPage";
@@ -67,27 +66,11 @@ function App() {
   };
 
 **/
-const [count, setCount] = useState<number>(0);
   const basictimer = new Timer();
   const detailedtimer = new Timer();
 
-  const updateCount = (newCount: number) => {
-    setCount(newCount); // Update count in main component
-  };
 
-  const toggleBasicTimer = () => {
-    basictimer.toggle((currentCount: number) => {
-      // Callback function to update count in main component
-      updateCount(currentCount);
-    });
-  };
 
-  const toggleDetailedTimer = () => {
-    detailedtimer.toggle((currentCount: number) => {
-      // Callback function to update count in main component
-      updateCount(currentCount);
-    });
-  };
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
