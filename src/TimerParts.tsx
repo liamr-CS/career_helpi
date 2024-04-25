@@ -1,28 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Timer from './Timer'; // Import the Timer class
 
-const TimerParts: React.FC = () => {
-    const [count, setCount] = useState<number>(0);
-    const [testTimer] = useState<Timer>(new Timer());
+interface TimerPartsProps {
+  updateCount: (count: number) => void; // Callback function to update count in main file
+}
 
-    const toggleTimer = () => {
-        testTimer.toggle((currentCount: number) => {
-            setCount(currentCount);
-        });
+const TimerParts: React.FC<TimerPartsProps> = ({ updateCount }) => {
+  const [basicTimer, setBasicTimer] = useState<Timer>(new Timer());
+  const [detailedTimer, setDetailedTimer] = useState<Timer>(new Timer());
+
+  useEffect(() => {
+    const basicInterval = setInterval(() => {
+      const count = basicTimer.getCount();
+      updateCount(count); // Update count in main file
+    }, 1000);
+
+    const detailedInterval = setInterval(() => {
+      const count = detailedTimer.getCount();
+      // Update count in main file
+      updateCount(count);
+    }, 1000);
+
+    return () => {
+      clearInterval(basicInterval);
+      clearInterval(detailedInterval);
     };
+  }, [basicTimer, detailedTimer, updateCount]);
 
-    const resetTimer = () => {
-        testTimer.reset();
-        setCount(0);
-    };
+  const toggleBasicTimer = () => {
+    basicTimer.toggle((currentCount: number) => {
+      // Callback function to update count in main file
+      updateCount(currentCount);
+    });
+  };
 
-    return (
-        <div>
-            <div>{count}</div>
-            <button onClick={toggleTimer}>Start/Stop</button>
-            <button onClick={resetTimer}>Reset</button>
-        </div>
-    );
+  const toggleDetailedTimer = () => {
+    detailedTimer.toggle((currentCount: number) => {
+      // Callback function to update count in main file
+      updateCount(currentCount);
+    });
+  };
+
+  const resetTimer = (timer: Timer) => {
+    timer.reset();
+    updateCount(0); // Reset count in main file
+  };
+
+  return (
+    <div>
+      {/* Your timer component UI */}
+      <button onClick={toggleBasicTimer}>Toggle Basic Timer</button>
+      <button onClick={toggleDetailedTimer}>Toggle Detailed Timer</button>
+      <button onClick={() => resetTimer(basicTimer)}>Reset Basic Timer</button>
+      <button onClick={() => resetTimer(detailedTimer)}>Reset Detailed Timer</button>
+    </div>
+  );
 };
-//requested help from GPT on lines: 6, 19-25
+
 export default TimerParts;
