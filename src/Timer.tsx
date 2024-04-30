@@ -10,6 +10,7 @@ class Timer {
     }
 
     toggle(callback: (count: number) => void) {
+        //used gpt above
         if (this.active) {
             this.stop();
         } else {
@@ -23,10 +24,12 @@ class Timer {
     }
 
     private start(callback: (count: number) => void) {
+        //used gpt for callbacks
         if (!this.active) {
             this.myTime = setInterval(() => {
                 this.count++;
                 callback(this.count);
+                //used gpt above
             }, 1000);
             this.active = true;
         }
@@ -39,6 +42,7 @@ class Timer {
             this.active = false;
         }
     }
+    //used gpt for clearInterval
 
     getCount() {
         return this.count;

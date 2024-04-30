@@ -8,16 +8,16 @@ interface TimerPartsProps {
 const TimerParts: React.FC<TimerPartsProps> = ({ updateCount }) => {
   const [basicTimer] = useState<Timer>(new Timer());
   const [detailedTimer] = useState<Timer>(new Timer());
+  //used GPT for declarations
 
   useEffect(() => {
     const basicInterval = setInterval(() => {
       const count = basicTimer.getCount();
-      updateCount(count); // Update count in main file
+      updateCount(count);
     }, 1000);
 
     const detailedInterval = setInterval(() => {
       const count = detailedTimer.getCount();
-      // Update count in main file
       updateCount(count);
     }, 1000);
 
@@ -29,21 +29,20 @@ const TimerParts: React.FC<TimerPartsProps> = ({ updateCount }) => {
 
   const toggleBasicTimer = () => {
     basicTimer.toggle((currentCount: number) => {
-      // Callback function to update count in main file
       updateCount(currentCount);
     });
   };
 
   const toggleDetailedTimer = () => {
     detailedTimer.toggle((currentCount: number) => {
-      // Callback function to update count in main file
+      // Used GPT here
       updateCount(currentCount);
     });
   };
 
   const resetTimer = (timer: Timer) => {
     timer.reset();
-    updateCount(0); // Reset count in main file
+    updateCount(0); //used GPT here
   };
 
   return (
