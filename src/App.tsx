@@ -119,7 +119,7 @@ function App() {
           <button onClick={() => { console.log('Button clicked'); basictimer.toggle((count) => console.log(count)); }}>Start/Stop Basic Quiz Timer</button>
           <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${basictimer.getCount()}`}>Click to show elapsed time: {basictimer.getCount()}</button>
           <BasicPage></BasicPage>
-        </div>
+        </div>//used GPT for timer buttons
       ) : (
         <div>
           <h2>Detailed Quiz Instructions:</h2>
@@ -127,7 +127,7 @@ function App() {
           <button onClick={() => { console.log('Button clicked'); detailedtimer.toggle((count) => console.log(count)); }}>Start/Stop Detailed Quiz Timer</button>
           <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${detailedtimer.getCount()}`}>Click to show elapsed time: {detailedtimer.getCount()}</button>
           <DetailedQuestionsPage></DetailedQuestionsPage>
-        </div>
+        </div>//used GPT for timer buttons
       )}
       {(showBasicQuestions || showDetailedQuestions) && (
         <div className="api-key-container">
