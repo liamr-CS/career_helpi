@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (42 ms)
+  ✕ renders learn react link (44 ms)
 
   ● renders learn react link
 
@@ -184,13 +184,13 @@ All files                  |    7.84 |    32.59 |    1.98 |       8 |
  DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                                     
  DetailedQuestions.tsx     |       0 |      100 |       0 |       0 | 10-277                                
  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-47                                  
- Timer.tsx                 |   16.66 |        0 |   14.28 |   16.66 | 13-44                                 
- TimerParts.tsx            |       0 |      100 |       0 |       0 | 8-55                                  
+ Timer.tsx                 |   16.66 |        0 |   14.28 |   16.66 | 14-48                                 
+ TimerParts.tsx            |       0 |      100 |       0 |       0 | 8-54                                  
  index.tsx                 |       0 |      100 |     100 |       0 | 7-19                                  
  reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10                                  
 ---------------------------|---------|----------|---------|---------|---------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.645 s
+Time:        3.49 s
 Ran all test suites.
