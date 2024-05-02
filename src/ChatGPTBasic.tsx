@@ -55,7 +55,7 @@ function BasicReport({answers} : BasicReportProps) {
             <button onClick={ChatGPTReport}>Get Results</button>
             <div>
                 <h2>Best suited for:</h2>
-                <p>{report.substring(17,report.indexOf("Will do well in:"))}</p>
+                <p>{report.substring(report.indexOf("Best suited for:")+17,report.indexOf("Will do well in:"))}</p>
                 <h2>Will do well in:</h2>
                 <p>{report.substring(report.indexOf("Will do well in:")+17,report.indexOf("Can adapt to:"))}</p>
                 <h2>Can adapt to:</h2>
