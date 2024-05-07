@@ -21,7 +21,7 @@ function BasicReport({answers} : BasicReportProps) {
     const [report, setReport] = useState("");
 
     function formatReport (report: string) {
-        setReport(report);
+        setReport(report.replace("*","").replace(" - ", ", "));
     }
     // The basis of this code is from OpenAi's tutorial for their API
     const ChatGPTReport = async () => {
@@ -34,7 +34,7 @@ function BasicReport({answers} : BasicReportProps) {
         const answer7 = answers.answer7;
         const completion = await openai.chat.completions.create({
         messages: [{ role: "system", 
-            content: "You create reports based on the results of a career assessment. The user has inputted the following results to the" + 
+            content: "You create reports based on the results of a career assessment. You never use the \"*\" character in your responses, and separate careers in the first 4 categories with a \",\".The user has inputted the following results to the" + 
             "following questions:\nDo you enjoy working with your hands? \"" 
             + answer1 + "\"\nAre you interested in technology? \"" + answer2 + "\"\nDo you like solving puzzles or problems? \"" + answer3
             + "\"\nDo you prefer working alone or in a team? \"" + answer4  + "\"\nDo you enjoy being creative? \"" + answer5
