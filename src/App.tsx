@@ -21,6 +21,8 @@ const prevKey = localStorage.getItem(saveKeyData);
 if (prevKey !== null) {
   keyData = JSON.parse(prevKey);
 }
+const basicTimer = new Timer();
+const detailedTimer = new Timer();
 
 function App() {
   const [key, setKey] = useState<string>(keyData);
@@ -64,6 +66,7 @@ function App() {
     setShowDetailedQuestions(false);
     basicTimer.reset();
     detailedTimer.reset();
+    window.location.reload();
   };
  /* const [testTimer] = useState<Timer>(new Timer());
 
@@ -77,8 +80,7 @@ function App() {
   };
 
 **/
-const [basicTimer] = useState<Timer>(new Timer());
-  const [detailedTimer] = useState<Timer>(new Timer());
+
 
 
 
