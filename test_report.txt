@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (40 ms)
+  ✕ renders learn react link (41 ms)
 
   ● renders learn react link
 
@@ -179,8 +179,8 @@ All files                  |    8.16 |    32.59 |    1.98 |    8.33 |
  BaseAsk.tsx               |       0 |      100 |       0 |       0 | 4                                     
  BasicQuestions.tsx        |       0 |      100 |       0 |       0 | 10-156                                
  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-48                                  
- ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-53                                 
- ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-53                                 
+ ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-57                                 
+ ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-57                                 
  DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                                     
  DetailedQuestions.tsx     |       0 |      100 |       0 |       0 | 10-277                                
  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-47                                  
@@ -192,5 +192,5 @@ All files                  |    8.16 |    32.59 |    1.98 |    8.33 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.467 s
+Time:        3.675 s
 Ran all test suites.
