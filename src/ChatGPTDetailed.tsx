@@ -34,18 +34,14 @@ function DetailedReport({answers} : DetailedReportProps) {
         const answer7 = answers.answer7;
         const completion = await openai.chat.completions.create({
         messages: [{ role: "system", 
-            content: "You create reports based on the results of a career assessment. You never use the \"*\" character in your responses, and separate careers in the first 4 categories with a \",\". The user has inputted the following results to the" + 
-            "following questions:\nOn a scale of one to five, how much do you like programming?" 
-            + answer1 + "\nOn a scale of strongly agree to strongly disagree, are you a leader?" + answer2 + "\nRespond with how correct the following statement is: reality is objective." + answer3
-            + "\nRespond with how often you do the following: think about the future." + answer4  + "\nCan you see yourself in this career: a fast-paced work environment?" + answer5
-            + "\nDoes the following sound like you: I want a good-work life balance?" + answer6 + "\nWhich one of the following careers sounds the most appealing?" + answer7 + 
+            content: "You create reports based on the results of a career assessment. You never use the \"*\" character nor the \"-\" character in your responses, and separate careers in the first 4 categories with a \",\"." + 
             "\"Please model your response in the following format:\"\nBest suited for:\nWill do well in:\nCan adapt to:\nUnlikely suited for:\n" +
             "Why you may be best suited for:\nWhy you would still do well in:\nWhy you might adapt to\nWhy you are likely not suited for:\n" +
             "The best type of work environment for you is:\nUnsuitable types of work environments for you are:\""}, {role: "user", content: "The user has inputted the following results to the" + 
-            "following questions:\nDo you enjoy working with your hands? \"" 
-            + answer1 + "\"\nAre you interested in technology? \"" + answer2 + "\"\nDo you like solving puzzles or problems? \"" + answer3
-            + "\"\nDo you prefer working alone or in a team? \"" + answer4  + "\"\nDo you enjoy being creative? \"" + answer5
-            + "\"\nAre you good at analyzing data or information? \"" + answer6 + "\"\nDo you have clear goals for your future career? \"" + answer7}],
+            "following questions:\nOn a scale of one to five, how much do you like programming?" 
+            + answer1 + "\nOn a scale of strongly agree to strongly disagree, are you a leader?" + answer2 + "\nRespond with how correct the following statement is: reality is objective." + answer3
+            + "\nRespond with how often you do the following: think about the future." + answer4  + "\nCan you see yourself in this career: a fast-paced work environment?" + answer5
+            + "\nDoes the following sound like you: I want a good-work life balance?" + answer6 + "\nWhich one of the following careers sounds the most appealing?" + answer7}],
         model: "gpt-4-turbo",
         });
         //Lines 42-46 by GPT-4
