@@ -34,11 +34,7 @@ function BasicReport({answers} : BasicReportProps) {
         const answer7 = answers.answer7;
         const completion = await openai.chat.completions.create({
         messages: [{ role: "system", 
-            content: "You create reports based on the results of a career assessment. You never use the \"*\" character in your responses, and separate careers in the first 4 categories with a \",\".The user has inputted the following results to the" + 
-            "following questions:\nDo you enjoy working with your hands? \"" 
-            + answer1 + "\"\nAre you interested in technology? \"" + answer2 + "\"\nDo you like solving puzzles or problems? \"" + answer3
-            + "\"\nDo you prefer working alone or in a team? \"" + answer4  + "\"\nDo you enjoy being creative? \"" + answer5
-            + "\"\nAre you good at analyzing data or information? \"" + answer6 + "\"\nDo you have clear goals for your future career? \"" + answer7 + 
+            content: "You create reports based on the results of a career assessment. You never use the \"*\" character nor the \"-\" character in your responses, and separate careers in the first 4 categories with a \",\"." + 
             "\"Please model your response in the following format:\"\nBest suited for:\nWill do well in:\nCan adapt to:\nUnlikely suited for:\n" +
             "Why you may be best suited for:\nWhy you would still do well in:\nWhy you might adapt to\nWhy you are likely not suited for:\n" +
             "The best type of work environment for you is:\nUnsuitable types of work environments for you are:\""}, {role: "user", content: "The user has inputted the following results to the" + 
