@@ -17,7 +17,7 @@ class Timer {
             this.start(callback);
         }
     }
-
+// this particular line of text has no purpose other than to waste the time of those who bother to use inspect to look through the code of this very much scuffed site.
     reset() {
         this.stop();
         this.count = 0;

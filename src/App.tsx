@@ -1,5 +1,5 @@
 import { Button, Form } from "react-bootstrap";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import BaseQsDes from './BaseAsk';
 import DetailQsDes from './DetailAsk';
@@ -7,6 +7,7 @@ import Timer from "./Timer";
 //import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
 import DetailedQuestionsPage from "./DetailedQuestionsPage";
+import TimerParts from "./TimerParts";
 //const testTimer = new Timer();
 
 
@@ -26,8 +27,16 @@ function App() {
   const [showBasicQuestions, setShowBasicQuestions] = useState(false);
   const [showDetailedQuestions, setShowDetailedQuestions] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [count, setCount] = useState<number>(0);
+  const updateCount = (newCount: number) => {
+    setCount(newCount);
+  };
+
   
 
+  useEffect(() => {
+    // This effect will re-run whenever 'count' changes
+  }, [count]);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.body.classList.toggle('dark-mode', !darkMode);
@@ -53,6 +62,8 @@ function App() {
   const navigateToHomepage = () => {
     setShowBasicQuestions(false);
     setShowDetailedQuestions(false);
+    basicTimer.reset();
+    detailedTimer.reset();
   };
  /* const [testTimer] = useState<Timer>(new Timer());
 
@@ -66,8 +77,8 @@ function App() {
   };
 
 **/
-  const basictimer = new Timer();
-  const detailedtimer = new Timer();
+const [basicTimer] = useState<Timer>(new Timer());
+  const [detailedTimer] = useState<Timer>(new Timer());
 
 
 
@@ -115,17 +126,17 @@ function App() {
       ) : showBasicQuestions ? (
         <div>
           <h2>Basic Quiz Instructions:</h2>
-          <BaseQsDes></BaseQsDes>
-          <button onClick={() => { console.log('Button clicked'); basictimer.toggle((count) => console.log(count)); }}>Start/Stop Basic Quiz Timer</button>
-          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${basictimer.getCount()}`}>Click to show elapsed time: {basictimer.getCount()}</button>
+          <BaseQsDes></BaseQsDes>          
+          <p>Count: {count} seconds</p>
+      <TimerParts updateCount={updateCount} timerType={"basicTimer"} />
           <BasicPage></BasicPage>
         </div>//used GPT for timer buttons
       ) : (
         <div>
           <h2>Detailed Quiz Instructions:</h2>
           <DetailQsDes></DetailQsDes>
-          <button onClick={() => { console.log('Button clicked'); detailedtimer.toggle((count) => console.log(count)); }}>Start/Stop Detailed Quiz Timer</button>
-          <button onClick={(e) => e.currentTarget.innerText = `Click to show current time: ${detailedtimer.getCount()}`}>Click to show elapsed time: {detailedtimer.getCount()}</button>
+          <p>Count: {count} seconds</p>
+      <TimerParts updateCount={updateCount} timerType={"detailedTimer"} />
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>//used GPT for timer buttons
       )}
