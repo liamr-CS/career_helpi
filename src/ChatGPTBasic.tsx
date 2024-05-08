@@ -53,7 +53,7 @@ function BasicReport({answers} : BasicReportProps) {
     return (
         <div>
             <button onClick={ChatGPTReport}>Get Answer</button>
-            {report === "Error: Report failed to generate" ? (<div><h2>{report}</h2></div>) : report === "" ? (<div><h2>Press the button above to get your results!</h2></div>) : 
+            {report === "Error: Report failed to generate" ? (<div><h2>{report}</h2></div>) : report === "" ? (<div><h2>Press the button above to get your results for the Basic Quiz!</h2></div>) : 
                 (
                     <div>
                         <h2>Best suited for:</h2>
