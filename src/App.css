@@ -482,9 +482,57 @@ border: 8px solid #1e1e1e;
 border: 8px solid #FFF;
 }
 
-
 .api-key-container {
-  margin-top: -140px;
-  margin-left: 1090px;
+  margin-top: 630px;
 }
 
+.Submit-Button {
+  position: absolute;
+  top: 660px;
+  right: 635px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+.Submit-Button:hover {
+  transform: scale(1.05);
+}
+
+.light-mode .Submit-Button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .Submit-Button {
+  background-color: #fff;
+  color: #333;
+}
+
+.api-key-input {
+  background-color: transparent;
+  border: 1px solid #ccc; /* You can adjust the border color as needed */
+  border-radius: 5px;
+  padding: 5px; /* Adjust padding as needed */
+  width: 200px; /* Adjust width as needed */
+}
+
+.dark-mode .api-key-input {
+  color: white; /* Text color */
+}
+
+/* Style for cursor in dark mode */
+.dark-mode .api-key-input::placeholder {
+  color: white; /* Placeholder color */
+}
+
+/* Style for cursor in dark mode */
+.dark-mode .api-key-input:focus {
+  caret-color: white; /* Cursor color */
+}
