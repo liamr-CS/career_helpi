@@ -135,13 +135,13 @@ function App() {
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>//used GPT for timer buttons
       )}
-      {(showBasicQuestions || showDetailedQuestions) && (
+      {!showBasicQuestions && !showDetailedQuestions && (
         <div className="api-key-container">
           <Form>
-            <Form.Label>API Key:</Form.Label>
-            <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
+            <Form.Label></Form.Label>
+            <Form.Control className="api-key-input" type="password" placeholder="" onChange={changeKey}></Form.Control>
             <br></br>
-            <Button className="Submit-Button" onClick={handleSubmit}>Submit</Button>
+            <Button className="Submit-Button" onClick={handleSubmit}>SUBMIT API</Button>
           </Form>
         </div>
       )}
