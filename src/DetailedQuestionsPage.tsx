@@ -18,9 +18,6 @@ function DetailedQuestionsPage() {
     function updateCompletedDetailedQuestions () {
         if(answers.answer1 !== "" && answers.answer2 !== "" && answers.answer3 !== "" && answers.answer4 !== "" && answers.answer5 !== "" 
         && answers.answer6 !== "" && answers.answer7 !== "") {
-            setCompletedDetailedQuestions(true);
-        } else {
-            setCompletedDetailedQuestions(false);
         }
     }
 
@@ -48,7 +45,7 @@ function DetailedQuestionsPage() {
         <div>
             {!completedDetailedQuestions ? (
                     <div>
-                        <DetQuestions onChange={handleAnswerChange} />
+                       <DetQuestions onChange={handleAnswerChange} onSubmit={() => setCompletedDetailedQuestions(true)} />
                     </div>
                 ) : (
                     <div>
@@ -56,6 +53,8 @@ function DetailedQuestionsPage() {
                     </div>
                 )
             }
+            <div className={`box ${completedDetailedQuestions ? 'hidden' : ''}`}>
+            </div>
         </div>
     )
 }

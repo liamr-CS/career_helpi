@@ -345,7 +345,7 @@ body.light-mode {
   font-weight: bold;
   text-align: left;
   margin-left: -350px;
-  white-space: nowrap;
+  margin-right: -310px;
 }
 
 .Button-previous {
@@ -424,23 +424,35 @@ body.light-mode {
   color: #333;
 }
 
+.custom-radio-container {
+  position: absolute; /* Position relative to the viewport */
+  top: 200px; /* Adjust the distance from the top */
+  right: 40px; /* Adjust the distance from the right */
+}
+
 .custom-radio {
-  display: inline-flex;
-  align-items: right;
-  margin-top: 140px; /* Adjust the distance from the top */
-  margin-right: 20px; /* Adjust the distance from the right */
+  display: flex;
+  align-items: center;
+  position: relative; /* Position relative to the container */
+  top: 70px; /* Adjust the distance from the top within the container */
+  right: 300px; /* Adjust the distance from the right within the container */
 }
 
 .custom-radio input[type="radio"] {
-  width: 30px; /* Adjust the size of the radio button */
-  height: 38px; /* Adjust the size of the radio button */
-  margin-right: 10px; /* Add some space between the radio button and the label */
+  width: 30px;
+  height: 38px;
+  margin-right: 10px;
 }
 
 .custom-radio label {
   font-size: 30px;
   font-weight: bold;
 }
+
+
+
+
+
 
 
 .hidden {
