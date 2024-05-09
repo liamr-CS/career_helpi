@@ -19,9 +19,6 @@ function BasicPage() {
     function updateCompletedBasicQuestions () {
         if(answers.answer1 !== "" && answers.answer2 !== "" && answers.answer3 !== "" && answers.answer4 !== "" && answers.answer5 !== "" 
         && answers.answer6 !== "" && answers.answer7 !== "") {
-            setCompletedBasicQuestions(true);
-        } else {
-            setCompletedBasicQuestions(false);
         }
     }
 
@@ -48,15 +45,16 @@ function BasicPage() {
     return (
         <div>
             {!completedBasicQuestions ? (
-                    <div>
-                        <Questions onChange={handleAnswerChange} />
-                    </div>
-                ) : (
-                    <div>
-                        <BasicReport answers={answers}/>
-                    </div>
-                )
-            }
+                <div>
+                    <Questions onChange={handleAnswerChange} onSubmit={() => setCompletedBasicQuestions(true)} />
+                </div>
+            ) : (
+                <div>
+                    <BasicReport answers={answers} />
+                </div>
+            )}
+            <div className={`box ${completedBasicQuestions ? 'hidden' : ''}`}>
+            </div>
         </div>
     )
 }

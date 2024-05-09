@@ -1,8 +1,6 @@
 import { Button, Form } from "react-bootstrap";
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import BaseQsDes from './BaseAsk';
-import DetailQsDes from './DetailAsk';
 import Timer from "./Timer";
 //import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
@@ -66,7 +64,6 @@ function App() {
     setShowDetailedQuestions(false);
     basicTimer.reset();
     detailedTimer.reset();
-    window.location.reload();
   };
  /* const [testTimer] = useState<Timer>(new Timer());
 
@@ -126,17 +123,13 @@ function App() {
           <button className="button-detailed-quiz" onClick={toggleDetailedQuestions}><h3>Detailed Quiz</h3></button>
         </div>
       ) : showBasicQuestions ? (
-        <div>
-          <h2>Basic Quiz Instructions:</h2>
-          <BaseQsDes></BaseQsDes>          
+        <div>     
           <p>Count: {count} seconds</p>
       <TimerParts updateCount={updateCount} timerType={"basicTimer"} />
           <BasicPage></BasicPage>
         </div>//used GPT for timer buttons
       ) : (
         <div>
-          <h2>Detailed Quiz Instructions:</h2>
-          <DetailQsDes></DetailQsDes>
           <p>Count: {count} seconds</p>
       <TimerParts updateCount={updateCount} timerType={"detailedTimer"} />
           <DetailedQuestionsPage></DetailedQuestionsPage>
