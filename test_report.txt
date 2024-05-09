@@ -173,14 +173,14 @@ go away.[0m
 ---------------------------|---------|----------|---------|---------|----------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
 ---------------------------|---------|----------|---------|---------|----------------------------------
-All files                  |    9.91 |    28.38 |    3.19 |    9.95 |                                  
+All files                  |    9.67 |    27.67 |    3.19 |    9.71 |                                  
  API-Output.tsx            |       0 |        0 |       0 |       0 |                                  
  App.tsx                   |   58.82 |    69.84 |   22.22 |   58.82 | 22,34,43-44,48-49,53,57,61,65-69 
  BaseAsk.tsx               |       0 |      100 |       0 |       0 | 4                                
  BasicQuestions.tsx        |       0 |      100 |       0 |       0 | 10-156                           
  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-48                             
- ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-53                            
- ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-54                            
+ ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-60                            
+ ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-60                            
  DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                                
  DetailedQuestions.tsx     |       0 |      100 |       0 |       0 | 10-277                           
  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-47                             
@@ -192,5 +192,5 @@ All files                  |    9.91 |    28.38 |    3.19 |    9.95 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.597 s
+Time:        3.481 s
 Ran all test suites.
