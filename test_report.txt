@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (46 ms)
+  ✕ renders learn react link (53 ms)
 
   ● renders learn react link
 
@@ -193,27 +193,27 @@ ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
 your devDependencies to work around this error. This will make this message
 go away.[0m
   
----------------------------|---------|----------|---------|---------|----------------------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
----------------------------|---------|----------|---------|---------|----------------------------------
-All files                  |   11.45 |    25.13 |    4.47 |   11.65 |                                  
- API-Output.tsx            |       0 |        0 |       0 |       0 |                                  
- App.tsx                   |    60.6 |    71.42 |   22.22 |    60.6 | 20,32,41-42,46-47,51,55,59,63-66 
- BaseAsk.tsx               |       0 |      100 |       0 |       0 | 4                                
- BasicQuestions.tsx        |    6.25 |        0 |       0 |    6.66 | 31-94                            
- BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-49                             
- ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-60                            
- ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-60                            
- DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                                
- DetailedQuestions.tsx     |       0 |        0 |       0 |       0 | 11-94                            
- DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-48                             
- Timer.tsx                 |   16.66 |        0 |   14.28 |   16.66 | 14-48                            
- TimerParts.tsx            |    4.54 |        0 |       0 |    4.54 | 10-45                            
- index.tsx                 |       0 |      100 |     100 |       0 | 7-19                             
- reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10                             
----------------------------|---------|----------|---------|---------|----------------------------------
+---------------------------|---------|----------|---------|---------|-------------------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s             
+---------------------------|---------|----------|---------|---------|-------------------------------
+All files                  |    9.78 |    25.13 |    2.89 |    9.95 |                               
+ API-Output.tsx            |       0 |        0 |       0 |       0 |                               
+ App.tsx                   |   58.62 |    71.42 |   14.28 |   58.62 | 19,30-31,35-36,40,44,48,52-55 
+ BaseAsk.tsx               |       0 |      100 |       0 |       0 | 4                             
+ BasicQuestions.tsx        |    5.26 |        0 |       0 |    5.55 | 32-110                        
+ BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-49                          
+ ChatGPTBasic.tsx          |       0 |        0 |       0 |       0 | 19-60                         
+ ChatGPTDetailed.tsx       |       0 |        0 |       0 |       0 | 19-60                         
+ DetailAsk.tsx             |       0 |      100 |       0 |       0 | 4                             
+ DetailedQuestions.tsx     |       0 |        0 |       0 |       0 | 12-109                        
+ DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-48                          
+ Timer.tsx                 |   16.66 |        0 |   14.28 |   16.66 | 14-48                         
+ TimerParts.tsx            |    4.54 |        0 |       0 |    4.54 | 10-45                         
+ index.tsx                 |       0 |      100 |     100 |       0 | 7-19                          
+ reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10                          
+---------------------------|---------|----------|---------|---------|-------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.515 s
+Time:        3.516 s
 Ran all test suites.
