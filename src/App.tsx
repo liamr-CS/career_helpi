@@ -77,7 +77,8 @@ function App() {
   };
 
 **/
-
+const seconds = count % 60;
+  const minutes = Math.floor(count / 60);
 
 
 
