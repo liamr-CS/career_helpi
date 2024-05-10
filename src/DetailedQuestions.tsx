@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./App.css";
-import Timer from "./Timer";
 import TimerParts from "./TimerParts";
 
 interface Props {

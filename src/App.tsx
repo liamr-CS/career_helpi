@@ -1,11 +1,10 @@
 import { Button, Form } from "react-bootstrap";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Timer from "./Timer";
 //import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
 import DetailedQuestionsPage from "./DetailedQuestionsPage";
-import TimerParts from "./TimerParts";
 //const testTimer = new Timer();
 
 
@@ -27,16 +26,6 @@ function App() {
   const [showBasicQuestions, setShowBasicQuestions] = useState(false);
   const [showDetailedQuestions, setShowDetailedQuestions] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [count, setCount] = useState<number>(0);
-  const updateCount = (newCount: number) => {
-    setCount(newCount);
-  };
-
-  
-
-  useEffect(() => {
-    // This effect will re-run whenever 'count' changes
-  }, [count]);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.body.classList.toggle('dark-mode', !darkMode);
