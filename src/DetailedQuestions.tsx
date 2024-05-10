@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./App.css";
+import Timer from "./Timer";
+import TimerParts from "./TimerParts";
 
 interface Props {
     onChange: (key: string, value: string) => void;
@@ -46,6 +48,18 @@ function DetQuestions({ onChange, onSubmit }: Props) {
         }
     };
 
+
+    const [count, setCount] = useState<number>(0);
+    const updateCount = (newCount: number) => {
+      setCount(newCount);
+    };
+    useEffect(() => {
+        // This effect will re-run whenever 'count' changes
+      }, [count]);
+      const seconds = count % 60;
+      const minutes = Math.floor(count / 60);
+
+
     const questionTexts = [
         "Q1: On a scale of one to five, how much do you like programming?",
         "Q2: On a scale of strongly agree to strongly disagree, are you a leader?",
@@ -85,6 +99,8 @@ function DetQuestions({ onChange, onSubmit }: Props) {
                     ))}
                 </div>
                 <div>
+                <p>Count: {minutes} minutes and {seconds} seconds</p>
+      <TimerParts updateCount={updateCount} timerType={"detailedTimer"} />
                     <Button className="Button-previous" onClick={handlePrevious} disabled={currentQuestion === 0}>Previous</Button>
                     <Button className="Button-next" onClick={handleNext} disabled={currentQuestion === 6}>Next</Button>
                     <Button

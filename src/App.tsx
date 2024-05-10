@@ -77,8 +77,6 @@ function App() {
   };
 
 **/
-const seconds = count % 60;
-  const minutes = Math.floor(count / 60);
 
 
 
@@ -125,14 +123,12 @@ const seconds = count % 60;
         </div>
       ) : showBasicQuestions ? (
         <div>     
-          <p>Count: {count} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"basicTimer"} />
+          
           <BasicPage></BasicPage>
         </div>//used GPT for timer buttons
       ) : (
         <div>
-          <p>Count: {count} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"detailedTimer"} />
+          
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>//used GPT for timer buttons
       )}
