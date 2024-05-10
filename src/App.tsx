@@ -81,7 +81,6 @@ function App() {
 
 
 
-
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="header">
@@ -124,14 +123,12 @@ function App() {
         </div>
       ) : showBasicQuestions ? (
         <div>     
-          <p>Count: {count} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"basicTimer"} />
+          
           <BasicPage></BasicPage>
         </div>//used GPT for timer buttons
       ) : (
         <div>
-          <p>Count: {count} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"detailedTimer"} />
+          
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>//used GPT for timer buttons
       )}
