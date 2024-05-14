@@ -250,7 +250,7 @@ body.light-mode {
 .button-detailed-quiz {
   position: absolute;
   top: 530px;
-  right: 280px;
+  right: 20%;
   background-color: #fff;
   color: #333;
   border: none;
@@ -300,7 +300,7 @@ body.light-mode {
 .detailedquiz-text {
   position: absolute;
   top: 345px;
-  left: 950px;
+  right: 6%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 48px;
@@ -483,18 +483,18 @@ body.light-mode {
 }
 
 .box {
-width: 1300px;
-height: 550px;
-background-color: transparent;
-border: 10px;
-border-radius: 20px;
-margin-top: 20px;
-position: absolute;
-top: 80px; 
-left: 50%; 
-transform: translateX(-50%);
-pointer-events: none;
-transition: border-color 0.8s ease, background-color 0.8s ease;
+  height: 550px; /* Adjust height as needed */
+  background-color: transparent;
+  border: 10px solid;
+  border-radius: 20px;
+  margin: 20px auto; /* Center the box horizontally */
+  position: absolute;
+  top: 11.5%; /* 10% from the top of the screen */
+  bottom: 2%; /* 10% from the top of the screen */
+  left: 2%; /* 10% from the left of the screen */
+  right: 2%; /* 10% from the left of the screen */
+  pointer-events: none;
+  transition: border-color 0.8s ease, background-color 0.8s ease;
 }
 
 .light-mode .box {
