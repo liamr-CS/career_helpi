@@ -1,52 +1,35 @@
 class Timer {
-    private myTime: NodeJS.Timeout | null;
-    private active: boolean;
     private count: number;
-
+    private timer: NodeJS.Timeout | null;
+  
     constructor() {
-        this.myTime = null;
-        this.active = false;
-        this.count = 0;
+      this.count = 0;
+      this.timer = null;
     }
-
-    toggle(callback: (count: number) => void) {
-        //used gpt above
-        if (this.active) {
-            this.stop();
-        } else {
-            this.start(callback);
-        }
+  
+    getCount(): number {
+      return this.count;
     }
-// this particular line of text has no purpose other than to waste the time of those who bother to use inspect to look through the code of this very much scuffed site.
-    reset() {
-        this.stop();
-        this.count = 0;
+  
+    start(): void {
+      if (!this.timer) {
+        this.timer = setInterval(() => {
+          this.count++;
+        }, 1000);
+      }
     }
-
-    private start(callback: (count: number) => void) {
-        //used gpt for callbacks
-        if (!this.active) {
-            this.myTime = setInterval(() => {
-                this.count++;
-                callback(this.count);
-                //used gpt above
-            }, 1000);
-            this.active = true;
-        }
+  
+    stop(): void {
+      if (this.timer) {
+        clearInterval(this.timer);
+        this.timer = null;
+      }
     }
-
-    stop() {
-        if (this.active && this.myTime) {
-            clearInterval(this.myTime);
-            this.myTime = null;
-            this.active = false;
-        }
+  
+    reset(): void {
+      this.count = 0;
+      this.stop();
     }
-    //used gpt for clearInterval
-
-    getCount() {
-        return this.count;
-    }
-}
-
-export default Timer;
+  }
+  
+  export default Timer;
