@@ -41,8 +41,8 @@
   background-image: url("C:/Users/claws/Downloads/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed */
+  width: 100px;
+  height: 50px;
   text-indent: -9999px; /* Hide text */
 }
 
