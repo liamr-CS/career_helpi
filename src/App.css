@@ -355,7 +355,7 @@ body.light-mode {
   height: 20px;
   border-radius: 30px;
   border: 20px transparent;
-  margin-top: -50px;
+  margin-top: 25px;
   z-index: 11;
 }
 
@@ -528,6 +528,11 @@ border: 8px solid #2C456B;
   transform: scale(1.05);
 }
 
+.timer-start-stop:hover {
+  transform: scale(1.05);
+}
+
+
 .light-mode .Submit-Button {
   background-color: #333;
   color: #DBC1AC;
@@ -557,7 +562,8 @@ border: 8px solid #2C456B;
 .light-mode .button-basic-quiz,
 .light-mode .button-detailed-quiz,
 .light-mode .Button-previous,
-.light-mode .Button-next {
+.light-mode .Button-next,
+.light-mode .timer-start-stop {
   background-color: #634832; /* Set button background color */
   color: #f4f4f4; /* Set button text color */
 }
@@ -576,7 +582,8 @@ border: 8px solid #2C456B;
 .dark-mode .button-basic-quiz,
 .dark-mode .button-detailed-quiz,
 .dark-mode .Button-previous,
-.dark-mode .Button-next {
+.dark-mode .Button-next,
+.dark-mode .timer-start-stop {
   background-color: #3C649F;
   color: #f4f4f4; /* Set button text color */
 }
@@ -588,4 +595,43 @@ border: 8px solid #2C456B;
 
 .dark-mode .api-key-input::placeholder {
   color: #3C649F; /* Set input placeholder color */
+}
+
+.timer-container {
+  position: fixed;
+  bottom: 120px;
+  right: 185px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.8s ease, border-color 0.8s ease;
+}
+
+.timer {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  transition: color 0.8s ease, border-color 0.8s ease;
+}
+
+.light-mode .timer {
+  color: #634832; /* Color for dark mode */
+}
+
+.dark-mode .timer {
+  color: #3C649F; /* Color for dark mode */
+}
+
+.timer-start-stop {
+  position: fixed;
+  bottom: 125px; 
+  background-color: #634832;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  right: 87px;
+  padding: 20px 32px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
+  z-index: 5;
 }

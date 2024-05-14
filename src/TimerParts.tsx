@@ -1,50 +1,56 @@
-import React, { useState, useEffect } from 'react';
-import Timer from './Timer'; // Import the Timer class
+import React, { useEffect, useState } from 'react';
+import Timer from './Timer';
 
 interface TimerPartsProps {
-  timerType: string; // Type of timer to display
-  updateCount: (count: number) => void; // Callback function to update count in main file
+  updateCount?: (count: number) => void;
 }
 
-const TimerParts: React.FC<TimerPartsProps> = ({ timerType, updateCount }) => {
-  const [basicTimer] = useState<Timer>(new Timer());
-  const [detailedTimer] = useState<Timer>(new Timer());
+const TimerParts: React.FC<TimerPartsProps> = ({ updateCount }) => {
+  const [timer] = useState<Timer>(new Timer());
+  const [timerRunning, setTimerRunning] = useState<boolean>(true);
+  const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (timerType === 'basicTimer') {
-        const count = basicTimer.getCount();
-        updateCount(count);
-      } else if (timerType === 'detailedTimer') {
-        const count = detailedTimer.getCount();
-        updateCount(count);
+    let interval: NodeJS.Timeout;
+
+    const updateTimer = () => {
+      const newCount = timer.getCount();
+      setCount(newCount);
+      if (updateCount) {
+        updateCount(newCount);
       }
-    }, 1000);
+    };
+
+    if (timerRunning) {
+      timer.start();
+      interval = setInterval(updateTimer, 1000);
+    }
 
     return () => {
       clearInterval(interval);
     };
-  }, [basicTimer, detailedTimer, timerType, updateCount]);
+  }, [timer, timerRunning, updateCount]);
 
-  const toggleTimer = (timer: Timer) => {
-    timer.toggle((currentCount: number) => {
-      updateCount(currentCount);
-    });
+  const toggleTimer = () => {
+    if (timerRunning) {
+      timer.stop();
+    } else {
+      timer.start();
+    }
+    setTimerRunning(!timerRunning);
   };
 
-  const resetTimer = (timer: Timer) => {
-    timer.reset();
-    updateCount(0);
+  const formatTime = (time: number): string => {
+    const hours = Math.floor(time / 3600);
+    const minutes = Math.floor((time % 3600) / 60);
+    const seconds = Math.floor(time % 60);
+    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   };
 
   return (
-    <div>
-      <button onClick={() => toggleTimer(timerType === 'basicTimer' ? basicTimer : detailedTimer)}>
-        Toggle {timerType === 'basicTimer' ? 'Basic' : 'Detailed'} Timer
-      </button>
-      <button onClick={() => resetTimer(timerType === 'basicTimer' ? basicTimer : detailedTimer)}>
-        Reset {timerType === 'basicTimer' ? 'Basic' : 'Detailed'} Timer
-      </button>
+    <div className="timer-container">
+      <div className="timer">{formatTime(count)}</div>
+      <button className="timer-start-stop" onClick={toggleTimer}>{timerRunning ? 'Stop' : 'Start'}</button>
     </div>
   );
 };

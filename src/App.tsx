@@ -1,16 +1,8 @@
 import { Button, Form } from "react-bootstrap";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Timer from "./Timer";
-//import TimerParts from "./TimerParts";
 import BasicPage from "./BasicQuestionsPage";
 import DetailedQuestionsPage from "./DetailedQuestionsPage";
-import TimerParts from "./TimerParts";
-//const testTimer = new Timer();
-
-
-
-//the testTimer is a demo for how the function/class works, remove once all proper timers are implemented and finalized
 
 export let keyData = "";
 export const saveKeyData = "MYKEY";
@@ -19,24 +11,13 @@ const prevKey = localStorage.getItem(saveKeyData);
 if (prevKey !== null) {
   keyData = JSON.parse(prevKey);
 }
-const basicTimer = new Timer();
-const detailedTimer = new Timer();
 
 function App() {
   const [key, setKey] = useState<string>(keyData);
   const [showBasicQuestions, setShowBasicQuestions] = useState(false);
   const [showDetailedQuestions, setShowDetailedQuestions] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [count, setCount] = useState<number>(0);
-  const updateCount = (newCount: number) => {
-    setCount(newCount);
-  };
 
-  
-
-  useEffect(() => {
-    // This effect will re-run whenever 'count' changes
-  }, [count]);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.body.classList.toggle('dark-mode', !darkMode);
@@ -62,25 +43,7 @@ function App() {
   const navigateToHomepage = () => {
     setShowBasicQuestions(false);
     setShowDetailedQuestions(false);
-    basicTimer.reset();
-    detailedTimer.reset();
   };
- /* const [testTimer] = useState<Timer>(new Timer());
-
-  const toggleTimer = () => {
-      testTimer.toggle((count: number) => {
-      });
-  };
-
-  const resetTimer = () => {
-      testTimer.reset();
-  };
-
-**/
-
-
-
-
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
@@ -124,16 +87,12 @@ function App() {
         </div>
       ) : showBasicQuestions ? (
         <div>     
-          <p>Count: {count} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"basicTimer"} />
           <BasicPage></BasicPage>
-        </div>//used GPT for timer buttons
+        </div>
       ) : (
         <div>
-          <p>Count: {count} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"detailedTimer"} />
           <DetailedQuestionsPage></DetailedQuestionsPage>
-        </div>//used GPT for timer buttons
+        </div>
       )}
       {!showBasicQuestions && !showDetailedQuestions && (
         <div className="api-key-container">
