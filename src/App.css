@@ -37,13 +37,33 @@
   z-index: 2;
 }
 
+.light-mode .quizzi-text {
+  background-image: url("C:/Users/claws/Downloads/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  text-indent: -9999px; /* Hide text */
+}
+
+.dark-mode .quizzi-text {
+  background-image: url("C:/Users/claws/Downloads/logo_-_Copy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 3px 0;
+  width: 100px; /* Adjust width as needed */
+  height: 46.4px; /* Adjust height as needed */
+  text-indent: -9999px; /* Hide text */
+}
+
+
 .dark-mode-toggle {
   position: fixed;
   top: 22px;
   right: 110px;
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: #f4f4f4;
   z-index: 2;
 }
 
@@ -60,9 +80,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #323232;
+  background-color: #38220F;
   height: 70px;
   z-index: 11;
+  transition: background-color 0.8s ease;
+}
+
+.light-mode .header {
+  background-color: #38220F;
+}
+
+.dark-mode .header {
+  background-color: #070b12;
 }
 
 .switch {
@@ -117,18 +146,18 @@ input:checked + .slider:before {
 
 body {
   transition: background-color 0.8s ease, color 0.8s ease;
-  background-color: #fff;
-  color: #000;
+  background-color: #DBC1AC;
+  color: #634832;
 }
 
 body.dark-mode {
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: #0f1a2a;
+  color: #3C649F;
 }
 
 body.light-mode {
-  background-color: #fff;
-  color: #000;
+  background-color: #DBC1AC;
+  color: #634832;
 }
 
 .quizzi-text {
@@ -152,11 +181,11 @@ body.light-mode {
 }
 
 .light-mode .repositionable-box {
-  border: 8px solid #1e1e1e;
+  border: 8px solid #38220F;
 }
 
 .dark-mode .repositionable-box {
-  border: 8px solid #FFF;
+  border: 8px solid #2C456B;
 }
 
 .mirrored-box {
@@ -172,11 +201,11 @@ body.light-mode {
 }
 
 .light-mode .mirrored-box {
-  border: 8px solid #1e1e1e;
+  border: 8px solid #38220F;
 }
 
 .dark-mode .mirrored-box {
-  border: 8px solid #FFF;
+  border: 8px solid #2C456B;
 }
 
 .centered-text {
@@ -210,11 +239,11 @@ body.light-mode {
 
 .light-mode .button-basic-quiz {
   background-color: #333;
-  color: #fff;
+  color: #DBC1AC;
 }
 
 .dark-mode .button-basic-quiz {
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
 }
 
@@ -238,11 +267,11 @@ body.light-mode {
 
 .light-mode .button-detailed-quiz {
   background-color: #333;
-  color: #fff;
+  color: #DBC1AC;
 }
 
 .dark-mode .button-detailed-quiz {
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
 }
 
@@ -351,7 +380,7 @@ body.light-mode {
 .Button-previous {
   position: fixed;
   bottom: 60px; 
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
   border: none;
   right: 300px;
@@ -366,7 +395,7 @@ body.light-mode {
 .Button-next {
   position: fixed;
   bottom: 60px; 
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
   border: none;
   border-radius: 20px;
@@ -386,12 +415,12 @@ body.light-mode {
 .light-mode .Button-previous,
 .light-mode .Button-next {
   background-color: #333;
-  color: #fff;
+  color: #DBC1AC;
 }
 
 .dark-mode .Button-previous,
 .dark-mode .Button-next {
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
 }
 
@@ -449,12 +478,6 @@ body.light-mode {
   font-weight: bold;
 }
 
-
-
-
-
-
-
 .hidden {
   display: none;
 }
@@ -475,11 +498,11 @@ transition: border-color 0.8s ease, background-color 0.8s ease;
 }
 
 .light-mode .box {
-border: 8px solid #1e1e1e;
+border: 8px solid #38220F;
 }
 
 .dark-mode .box {
-border: 8px solid #FFF;
+border: 8px solid #2C456B;
 }
 
 .api-key-container {
@@ -490,7 +513,7 @@ border: 8px solid #FFF;
   position: absolute;
   top: 660px;
   right: 635px;
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
   border: none;
   border-radius: 20px;
@@ -507,32 +530,62 @@ border: 8px solid #FFF;
 
 .light-mode .Submit-Button {
   background-color: #333;
-  color: #fff;
+  color: #DBC1AC;
 }
 
 .dark-mode .Submit-Button {
-  background-color: #fff;
+  background-color: #DBC1AC;
   color: #333;
 }
 
 .api-key-input {
   background-color: transparent;
-  border: 1px solid #ccc; /* You can adjust the border color as needed */
+  border: 1px solid #333;
   border-radius: 5px;
-  padding: 5px; /* Adjust padding as needed */
-  width: 200px; /* Adjust width as needed */
+  padding: 5px;
+  width: 200px;
+  transition: color 0.8s ease, border-color 0.8s ease;
+}
+
+
+.dark-mode .api-key-input:focus {
+  caret-color: #3C649F; /* Cursor color */
+}
+
+.light-mode .Button-submit,
+.light-mode .Submit-Button,
+.light-mode .button-basic-quiz,
+.light-mode .button-detailed-quiz,
+.light-mode .Button-previous,
+.light-mode .Button-next {
+  background-color: #634832; /* Set button background color */
+  color: #f4f4f4; /* Set button text color */
+}
+
+.light-mode .api-key-input {
+  color: #634832; /* Set input text color */
+  border-color: #634832; /* Set input border color */
+}
+
+.light-mode .api-key-input::placeholder {
+  color: #634832; /* Set input placeholder color */
+}
+
+.dark-mode .Button-submit,
+.dark-mode .Submit-Button,
+.dark-mode .button-basic-quiz,
+.dark-mode .button-detailed-quiz,
+.dark-mode .Button-previous,
+.dark-mode .Button-next {
+  background-color: #3C649F;
+  color: #f4f4f4; /* Set button text color */
 }
 
 .dark-mode .api-key-input {
-  color: white; /* Text color */
+  color: #3C649F; /* Set input text color */
+  border-color: #3C649F; /* Set input border color */
 }
 
-/* Style for cursor in dark mode */
 .dark-mode .api-key-input::placeholder {
-  color: white; /* Placeholder color */
-}
-
-/* Style for cursor in dark mode */
-.dark-mode .api-key-input:focus {
-  caret-color: white; /* Cursor color */
+  color: #3C649F; /* Set input placeholder color */
 }

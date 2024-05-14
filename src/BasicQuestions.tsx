@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./App.css";
-import TimerParts from "./TimerParts";
 
 interface Props {
   onChange: (key: string, value: string) => void;
@@ -67,19 +66,6 @@ function Questions({ onChange, onSubmit }: Props) {
     }
   };
 
-
-
-  const [count, setCount] = useState<number>(0);
-  const updateCount = (newCount: number) => {
-    setCount(newCount);
-  };
-  useEffect(() => {
-    // This effect will re-run whenever 'count' changes
-  }, [count]);
-  const seconds = count % 60;
-  const minutes = Math.floor(count / 60);
-
-
   return (
     <div className="progress-bar-wrapper">
       <div className="progress-bar-container">
@@ -99,8 +85,6 @@ function Questions({ onChange, onSubmit }: Props) {
           ))}
         </div>
         <div>
-        <p>Count: {minutes} minutes and {seconds} seconds</p>
-      <TimerParts updateCount={updateCount} timerType={"basicTimer"} />
         <Button className="Button-previous" onClick={handlePrevious} disabled={currentQuestion === 0}>Previous</Button>
         <Button className="Button-next" onClick={handleNext} disabled={currentQuestion === questions.length - 1}>Next</Button>
         <Button
