@@ -38,7 +38,7 @@
 }
 
 .light-mode .quizzi-text {
-  background-image: url(https://cdn.discordapp.com/attachments/1212809368668602490/1237831979550904320/logo.png?ex=6643abdd&is=66425a5d&hm=62f9bbcd731d5198572470360d080fbdb7ed537df9013a4c5bcb05f32663a317&);
+  background-image: url(logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
@@ -47,7 +47,7 @@
 }
 
 .dark-mode .quizzi-text {
-  background-image: url(https://cdn.discordapp.com/attachments/1212809368668602490/1237831979060297728/logo_-_Copy.png?ex=6643abdd&is=66425a5d&hm=c1aa67802a881fd7808ef6076e8d74000a5eac4b53395eaec9f0e628bc96c74c&);
+  background-image: url(logo\ -\ Copy.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 3px 0;
