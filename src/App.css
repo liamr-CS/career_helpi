@@ -563,7 +563,8 @@ border: 8px solid #2C456B;
 .light-mode .button-detailed-quiz,
 .light-mode .Button-previous,
 .light-mode .Button-next,
-.light-mode .timer-start-stop {
+.light-mode .timer-start-stop,
+.light-mode .Button-get-answer {
   background-color: #634832; /* Set button background color */
   color: #f4f4f4; /* Set button text color */
 }
@@ -583,7 +584,8 @@ border: 8px solid #2C456B;
 .dark-mode .button-detailed-quiz,
 .dark-mode .Button-previous,
 .dark-mode .Button-next,
-.dark-mode .timer-start-stop {
+.dark-mode .timer-start-stop,
+.dark-mode .Button-get-answer {
   background-color: #3C649F;
   color: #f4f4f4; /* Set button text color */
 }
@@ -634,4 +636,71 @@ border: 8px solid #2C456B;
   font-weight: bold;
   transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
   z-index: 5;
+}
+
+.Button-get-answer {
+  border: none;
+  border-radius: 20px;
+  padding: 20px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 500px;
+  left: 46%;
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
+}
+
+.Button-get-answer:hover {
+  transform: scale(1.05);
+}
+
+.Results-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  text-align: center; /* To center the text horizontally */
+}
+
+.Loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em; /* Adjust font size as needed */
+  z-index: 1; /* Ensure the loading overlay appears above other content */
+}
+
+.Loading-spinner-container {
+  margin-right: 100px; /* Add space between text and spinner */
+}
+
+.light-mode .Loading-spinner {
+  border: 8px solid #DBC1AC; /* Light grey border */
+  border-top: 8px solid #38220F; /* Blue border on top */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Spinning animation */
+  transition: border-color 0.8s ease;
+}
+
+.dark-mode .Loading-spinner {
+  border: 8px solid #0f1a2a; /* Light grey border */
+  border-top: 8px solid #2C456B; /* Blue border on top */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Spinning animation */
+  transition: border-color 0.8s ease;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

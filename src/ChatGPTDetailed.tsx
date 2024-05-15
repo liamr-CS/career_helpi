@@ -59,8 +59,23 @@ function DetailedReport({answers} : DetailedReportProps) {
     };
     return (
         <div>
-            <button onClick={ChatGPTReport}>Get Answer</button>
-            {isLoading ? (<div><h2>Loading...</h2></div>) : report === "Error: Report failed to generate" ? (<div><h2>{report}</h2></div>) : report === "" ? (<div><h2>Press the button above to get your results for the Detailed Quiz!</h2></div>) : 
+    {!isLoading && report === "" && (
+      <button className="Button-get-answer" onClick={ChatGPTReport}>Get Results</button>
+    )}
+      {isLoading ? (
+        <div className="Loading-overlay">
+          <h2>Loading</h2>
+          <div className="Loading-spinner"></div> {/* Spinning circle loading animation */}
+        </div>
+      ) : report === "Error: Report failed to generate" ? (
+        <div>
+          <h2>{report}</h2>
+        </div>
+      ) : report === "" ? (
+        <div className="Results-text">
+          <h2>You've completed the Detailed Quiz!</h2>
+        </div>
+      ) :  
                 (
                     <div>
                         <h2>Best suited for:</h2>
