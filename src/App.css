@@ -488,21 +488,23 @@ body.light-mode {
   border: 10px solid;
   border-radius: 20px;
   margin: 20px auto; /* Center the box horizontally */
-  position: absolute;
+  position: fixed;
   top: 11.5%; /* 10% from the top of the screen */
-  bottom: 2%; /* 10% from the top of the screen */
   left: 2%; /* 10% from the left of the screen */
   right: 2%; /* 10% from the left of the screen */
+  bottom: 2%; /* 2% from the bottom of the screen */
   pointer-events: none;
-  transition: border-color 0.8s ease, background-color 0.8s ease;
+  transition: border-color 0.8s ease, background-color 0.8s ease, box-shadow 0.8s ease;
 }
 
 .light-mode .box {
 border: 8px solid #38220F;
+box-shadow: 0 0 0 30px #DBC1AC;
 }
 
 .dark-mode .box {
 border: 8px solid #2C456B;
+box-shadow: 0 0 0 30px #0f1a2a;
 }
 
 .api-key-container {
@@ -703,4 +705,26 @@ border: 8px solid #2C456B;
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.Results-container {
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 50px auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+.Results-heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: -180px;
+}
+
+.Results-section p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: -130px;
 }

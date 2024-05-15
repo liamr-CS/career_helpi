@@ -48,11 +48,11 @@ function DetQuestions({ onChange, onSubmit }: Props) {
 
     const questionTexts = [
         "Q1: On a scale of one to five, how much do you like programming?",
-        "Q2: On a scale of strongly agree to strongly disagree, are you a leader?",
-        "Q3: Respond with how correct the following statement is: reality is objective.",
-        "Q4: Respond with how often you do the following: think about the future.",
-        "Q5: Can you see yourself in this career: a fast-paced work environment?",
-        "Q6: Does the following sound like you: I want a good-work life balance?",
+        "Q2: Using the scale below, would you consider yourself to be a leader?",
+        "Q3: How correct do you feel the following statement is: Reality is objective.",
+        "Q4: How often do you find yourself thinking about the future?",
+        "Q5: Can you see yourself in a career that has a fast-paced work environment?",
+        "Q6: Do you relate to the following statement: I want a good-work life balance.",
         "Q7: Which one of the following careers sounds the most appealing?"
     ];
 
@@ -62,7 +62,7 @@ function DetQuestions({ onChange, onSubmit }: Props) {
         ["100% correct", "75% correct", "50% correct", "25% correct", "0% correct"],
         ["All the time", "A lot of the time", "Sometimes", "Not very often", "Never"],
         ["Yes", "Maybe", "No"],
-        ["That sounds like me", "That kind of sounds like me", "No, that does not sound like me"],
+        ["Yes, I relate to that", "I feel indifferent", "No, I do not relate to that"],
         ["Carpenter", "Tailor", "Construction Worker", "Jeweler"]
     ];
 
