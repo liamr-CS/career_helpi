@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import React, { useState } from "react";
 import { keyData } from "./App";
+import './App.css';
 
 //ChatGPT-4 generated BasicReportProps
 interface BasicReportProps {
@@ -58,7 +59,7 @@ function BasicReport({answers} : BasicReportProps) {
 
     };
     return (
-        <div>
+      <div className="Results-container">
     {!isLoading && report === "" && (
       <button className="Button-get-answer" onClick={ChatGPTReport}>Get Results</button>
     )}
@@ -77,28 +78,49 @@ function BasicReport({answers} : BasicReportProps) {
         </div>
       ) :  
                 (
-                    <div>
-                        <h2>Best suited for:</h2>
-                        <p>{report.substring(report.indexOf("Best suited for:")+17,report.indexOf("Will do well in:"))}</p>
-                        <h2>Will do well in:</h2>
-                        <p>{report.substring(report.indexOf("Will do well in:")+17,report.indexOf("Can adapt to:"))}</p>
-                        <h2>Can adapt to:</h2>
-                        <p>{report.substring(report.indexOf("Can adapt to:")+14,report.indexOf("Unlikely suited for:"))}</p>
-                        <h2>Unlikely suited for:</h2>
-                        <p>{report.substring(report.indexOf("Unlikely suited for:")+21,report.indexOf("Why you may be best suited for:"))}</p>
-                        <h2>Why you may be best suited for:</h2>
-                        <p>{report.substring(report.indexOf("Why you may be best suited for:")+32,report.indexOf("Why you would still do well in:"))}</p>
-                        <h2>Why you would still do well in:</h2>
-                        <p>{report.substring(report.indexOf("Why you would still do well in:")+32,report.indexOf("Why you might adapt to:"))}</p>
-                        <h2>Why you might adapt to:</h2>
-                        <p>{report.substring(report.indexOf("Why you might adapt to:")+24,report.indexOf("Why you are likely not suited for:"))}</p>
-                        <h2>Why you are likely not suited for:</h2>
-                        <p>{report.substring(report.indexOf("Why you are likely not suited for:")+35,report.indexOf("The best type of work environment for you is:"))}</p>
-                        <h2>The best type of work environment for you is:</h2>
-                        <p>{report.substring(report.indexOf("The best type of work environment for you is:")+46,report.indexOf("Unsuitable types of work environments for you are:"))}</p>
-                        <h2>Unsuitable types of work environments for you are:</h2>
-                        <p>{report.substring(report.indexOf("Unsuitable types of work environments for you are:")+51)}</p>
-                    </div> 
+                  <div>
+  <div className="Results-section">
+    <h2 className="Results-heading">BEST CAREER(S) FOR YOU:</h2>
+    <p>{report.substring(report.indexOf("Best suited for:") + 17, report.indexOf("Will do well in:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">WOULD SUCSEED DOING THESE CAREERS:</h2>
+    <p>{report.substring(report.indexOf("Will do well in:") + 17, report.indexOf("Can adapt to:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">CAREERS YOU CAN ADAPT TO:</h2>
+    <p>{report.substring(report.indexOf("Can adapt to:") + 14, report.indexOf("Unlikely suited for:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">CAREERS YOU ARE UNLICKELY SUITED FOR:</h2>
+    <p>{report.substring(report.indexOf("Unlikely suited for:") + 21, report.indexOf("Why you may be best suited for:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">WHY THESE CAREERS ARE BEST FOR YOU:</h2>
+    <p>{report.substring(report.indexOf("Why you may be best suited for:") + 32, report.indexOf("Why you would still do well in:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">WHY YOU WOULD WOULD SUCSEED DOING THESE CAREERS:</h2>
+    <p>{report.substring(report.indexOf("Why you would still do well in:") + 32, report.indexOf("Why you might adapt to:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">WHY YOU CAN ADAPT TO THESE CAREERS:</h2>
+    <p>{report.substring(report.indexOf("Why you might adapt to:") + 24, report.indexOf("Why you are likely not suited for:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">WHY YOU ARE UNLICKELY SUITED FOR THESE CAREERS:</h2>
+    <p>{report.substring(report.indexOf("Why you are likely not suited for:") + 35, report.indexOf("The best type of work environment for you is:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">THE BEST TYPE OF WORK ENVIRONMENT FOR YOU IS:</h2>
+    <p>{report.substring(report.indexOf("The best type of work environment for you is:") + 46, report.indexOf("Unsuitable types of work environments for you are:"))}</p>
+  </div>
+  <div className="Results-section">
+    <h2 className="Results-heading">UNSUITABLE TYPES OF WORK ENVIRONMENTS FOR YOU ARE:</h2>
+    <p>{report.substring(report.indexOf("Unsuitable types of work environments for you are:") + 51)}</p>
+  </div>
+</div>
+ 
                 )
             }
         </div>
