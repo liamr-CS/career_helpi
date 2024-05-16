@@ -83,7 +83,7 @@ function DetailedReport({answers} : DetailedReportProps) {
                     <p>{report.substring(report.indexOf("Best suited for:") + 17, report.indexOf("Will do well in:"))}</p>
                   </div>
                   <div className="Results-section">
-                    <h2 className="Results-heading">WOULD SUCSEED DOING THESE CAREERS:</h2>
+                    <h2 className="Results-heading">WOULD SUCCEED DOING THESE CAREERS:</h2>
                     <p>{report.substring(report.indexOf("Will do well in:") + 17, report.indexOf("Can adapt to:"))}</p>
                   </div>
                   <div className="Results-section">
@@ -91,7 +91,7 @@ function DetailedReport({answers} : DetailedReportProps) {
                     <p>{report.substring(report.indexOf("Can adapt to:") + 14, report.indexOf("Unlikely suited for:"))}</p>
                   </div>
                   <div className="Results-section">
-                    <h2 className="Results-heading">CAREERS YOU ARE UNLICKELY SUITED FOR:</h2>
+                    <h2 className="Results-heading">CAREERS YOU ARE UNLIKELY SUITED FOR:</h2>
                     <p>{report.substring(report.indexOf("Unlikely suited for:") + 21, report.indexOf("Why you may be best suited for:"))}</p>
                   </div>
                   <div className="Results-section">
@@ -99,7 +99,7 @@ function DetailedReport({answers} : DetailedReportProps) {
                     <p>{report.substring(report.indexOf("Why you may be best suited for:") + 32, report.indexOf("Why you would still do well in:"))}</p>
                   </div>
                   <div className="Results-section">
-                    <h2 className="Results-heading">WHY YOU WOULD WOULD SUCSEED DOING THESE CAREERS:</h2>
+                    <h2 className="Results-heading">WHY YOU WOULD WOULD SUCCEED DOING THESE CAREERS:</h2>
                     <p>{report.substring(report.indexOf("Why you would still do well in:") + 32, report.indexOf("Why you might adapt to:"))}</p>
                   </div>
                   <div className="Results-section">
@@ -107,7 +107,7 @@ function DetailedReport({answers} : DetailedReportProps) {
                     <p>{report.substring(report.indexOf("Why you might adapt to:") + 24, report.indexOf("Why you are likely not suited for:"))}</p>
                   </div>
                   <div className="Results-section">
-                    <h2 className="Results-heading">WHY YOU ARE UNLICKELY SUITED FOR THESE CAREERS:</h2>
+                    <h2 className="Results-heading">WHY YOU ARE UNLIKELY SUITED FOR THESE CAREERS:</h2>
                     <p>{report.substring(report.indexOf("Why you are likely not suited for:") + 35, report.indexOf("The best type of work environment for you is:"))}</p>
                   </div>
                   <div className="Results-section">
