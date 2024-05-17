@@ -1,3 +1,4 @@
+/* Structure for Quiz Timer */
 class Timer {
     private count: number;
     private timer: NodeJS.Timeout | null;

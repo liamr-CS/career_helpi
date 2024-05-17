@@ -1,3 +1,4 @@
+/* Imports */
 import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./App.css";
@@ -7,6 +8,9 @@ interface Props {
   onSubmit: () => void;
 }
 
+
+
+/* Basic Quiz Questions and Answer Choices */
 const questions = [
   "Q1: Do you enjoy working with your hands?",
   "Q2: Are you interested in technology?",
@@ -27,6 +31,9 @@ const answerChoices = [
   ["Yes", "No"]
 ];
 
+
+
+/* Consts for Quiz Question Rendering, Answer Changes, Previous/Next Buttons, and Submit Button */
 function Questions({ onChange, onSubmit }: Props) {
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [answers, setAnswers] = useState<string[]>(new Array(questions.length).fill(""));
@@ -66,6 +73,9 @@ function Questions({ onChange, onSubmit }: Props) {
     }
   };
 
+
+
+/* Return Statments for Progress Bar Logic, Previous/Next Buttons, and Radio Buttons */
   return (
     <div className="progress-bar-wrapper">
       <div className="progress-bar-container">

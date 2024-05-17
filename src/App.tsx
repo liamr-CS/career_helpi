@@ -1,3 +1,4 @@
+/* Imports/Exports */
 import { Button, Form } from "react-bootstrap";
 import React, { useState } from 'react';
 import './App.css';
@@ -12,6 +13,9 @@ if (prevKey !== null) {
   keyData = JSON.parse(prevKey);
 }
 
+
+
+/* Consts for Basic/Detailed Questions, Dark/Light Mode, and API Key */
 function App() {
   const [key, setKey] = useState<string>(keyData);
   const [showBasicQuestions, setShowBasicQuestions] = useState(false);
@@ -45,6 +49,9 @@ function App() {
     setShowDetailedQuestions(false);
   };
 
+
+
+/* Return Statements for Rendering Text, Descriptions, and Quiz Elements */
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="header">
@@ -94,7 +101,8 @@ function App() {
           <DetailedQuestionsPage></DetailedQuestionsPage>
         </div>
       )}
-      {!showBasicQuestions && !showDetailedQuestions && (
+      
+      {!showBasicQuestions && !showDetailedQuestions && ( /* API Key Functionality and Rendering Logic */
         <div className="api-key-container">
           <Form>
             <Form.Label></Form.Label>

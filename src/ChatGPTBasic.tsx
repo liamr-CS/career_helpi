@@ -1,3 +1,4 @@
+/* Imports */
 import OpenAI from "openai";
 import React, { useState } from "react";
 import { keyData } from "./App";
@@ -58,6 +59,10 @@ function BasicReport({answers} : BasicReportProps) {
         } 
 
     };
+
+
+    
+    /* Return Statements for Resluts Text, GPT Generation, and Formatting */
     return (
       <div className="Results-container">
     {!isLoading && report === "" && (
@@ -66,7 +71,7 @@ function BasicReport({answers} : BasicReportProps) {
       {isLoading ? (
         <div className="Loading-overlay">
           <h2>Loading</h2>
-          <div className="Loading-spinner"></div> {/* Spinning circle loading animation */}
+          <div className="Loading-spinner"></div>
         </div>
       ) : report === "Error: Report failed to generate" ? (
         <div>
