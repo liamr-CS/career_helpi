@@ -1,3 +1,4 @@
+/* Pre-Added Elements */
 .App {
   text-align: center;
   transition: background-color 0.8s ease;
@@ -27,6 +28,9 @@
   }
 }
 
+
+
+/* Quizzi Kitty Logo */
 .quizzi-text {
   position: fixed;
   top: 10px;
@@ -43,7 +47,7 @@
   background-repeat: no-repeat;
   width: 100px;
   height: 50px;
-  text-indent: -9999px; /* Hide text */
+  text-indent: -9999px;
 }
 
 .dark-mode .quizzi-text {
@@ -51,12 +55,22 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 3px 0;
-  width: 100px; /* Adjust width as needed */
-  height: 46.4px; /* Adjust height as needed */
-  text-indent: -9999px; /* Hide text */
+  width: 100px;
+  height: 46.4px;
+  text-indent: -9999px;
+}
+
+.quizzi-text {
+  cursor: default;
+}
+
+.quizzi-text:hover {
+  cursor: pointer;
 }
 
 
+
+/* Dark/Light Mode Toggle */
 .dark-mode-toggle {
   position: fixed;
   top: 22px;
@@ -73,25 +87,6 @@
 
 .dark-mode-text::before {
   content: "Dark Mode";
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #38220F;
-  height: 70px;
-  z-index: 11;
-  transition: background-color 0.8s ease;
-}
-
-.light-mode .header {
-  background-color: #38220F;
-}
-
-.dark-mode .header {
-  background-color: #070b12;
 }
 
 .switch {
@@ -144,6 +139,31 @@ input:checked + .slider:before {
   transition: transform 0.4s, background-color 0.4s;
 }
 
+
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #38220F;
+  height: 70px;
+  z-index: 11;
+  transition: background-color 0.8s ease;
+}
+
+.light-mode .header {
+  background-color: #38220F;
+}
+
+.dark-mode .header {
+  background-color: #070b12;
+}
+
+
+
+/* Background Colors */
 body {
   transition: background-color 0.8s ease, color 0.8s ease;
   background-color: #DBC1AC;
@@ -160,14 +180,9 @@ body.light-mode {
   color: #634832;
 }
 
-.quizzi-text {
-  cursor: default;
-}
 
-.quizzi-text:hover {
-  cursor: pointer;
-}
 
+/* Basic Quiz Box */
 .repositionable-box {
   position: fixed;
   top: 300px;
@@ -188,6 +203,9 @@ body.light-mode {
   border: 8px solid #2C456B;
 }
 
+
+
+/* Detailed Quiz Box */
 .mirrored-box {
   position: fixed;
   top: 300px;
@@ -208,6 +226,9 @@ body.light-mode {
   border: 8px solid #2C456B;
 }
 
+
+
+/* Title Text and Subtext */
 .centered-text {
   position: absolute;
   top: 150px;
@@ -219,6 +240,20 @@ body.light-mode {
   pointer-events: none;
 }
 
+.subtext-text {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+
+
+/* Basic/Detailed Quiz Buttons */
 .button-basic-quiz {
   position: absolute;
   top: 530px;
@@ -275,17 +310,9 @@ body.light-mode {
   color: #333;
 }
 
-.subtext-text {
-  position: absolute;
-  top: 210px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  pointer-events: none;
-}
 
+
+/* Basic/Detailed Quiz Titles and Descriptions */
 .basicquiz-text {
   position: absolute;
   top: 345px;
@@ -330,6 +357,9 @@ body.light-mode {
   pointer-events: none;
 }
 
+
+
+/* Fade Out/In Effects */
 .fade-out {
   opacity: 0;
   pointer-events: none;
@@ -344,6 +374,9 @@ body.light-mode {
   transition: opacity 2s ease;
 }
 
+
+
+/* Progress Bar */
 .progress-bar-wrapper {
   display: flex;
   justify-content: center;
@@ -367,6 +400,9 @@ body.light-mode {
   z-index: 11;
 }
 
+
+
+/* Quiz Questions (Detailed and Basic) */
 .question {
   font-size: 50px;
   margin-bottom: 30px;
@@ -377,6 +413,9 @@ body.light-mode {
   margin-right: -310px;
 }
 
+
+
+/* Quiz Buttons (Detailed and Basic) */
 .Button-previous {
   position: fixed;
   bottom: 60px; 
@@ -426,17 +465,17 @@ body.light-mode {
 
 .Button-submit {
   position: fixed;
-  bottom: 60px; /* Adjust as needed */
+  bottom: 60px;
   background-color: #fff;
   color: #333;
   border: none;
   border-radius: 20px;
-  padding: 20px 30px; /* Adjust padding to increase button size */
+  padding: 20px 30px;
   cursor: pointer;
   transition: background-color 0.8s ease, color 0.8s ease, transform 0.3s ease;
   z-index: 5;
-  right: 87px; /* Adjust the position as needed */
-  font-weight: bold; /* Make the text bold */
+  right: 87px;
+  font-weight: bold;
 }
 
 .Button-submit:hover {
@@ -453,8 +492,11 @@ body.light-mode {
   color: #333;
 }
 
+
+
+/* Radio Buttons */
 .custom-radio-container {
-  position: absolute; /* Position relative to the viewport */
+  position: absolute;
   top: 200px;
   right: 40px;
 }
@@ -462,9 +504,9 @@ body.light-mode {
 .custom-radio {
   display: flex;
   align-items: center;
-  position: relative; /* Position relative to the container */
-  top: 70px; /* Adjust the distance from the top within the container */
-  right: 300px; /* Adjust the distance from the right within the container */
+  position: relative;
+  top: 70px;
+  right: 300px;
 }
 
 .custom-radio input[type="radio"] {
@@ -478,20 +520,26 @@ body.light-mode {
   font-weight: bold;
 }
 
+
+
+/* Hidden Property for Rendering */
 .hidden {
   display: none;
 }
 
+
+
+/* Box for Quiz Pages and Results Page */
 .box {
-  height: 550px; /* Adjust height as needed */
+  height: 550px;
   background-color: transparent;
   border: 10px solid;
   border-radius: 20px;
-  margin: 20px auto; /* Center the box horizontally */
+  margin: 20px auto;
   position: fixed;
-  top: 11.5%; /* 10% from the top of the screen */
-  left: 2%; /* 10% from the left of the screen */
-  right: 2%; /* 10% from the left of the screen */
+  top: 11.5%;
+  left: 2%;
+  right: 2%;
   bottom: 2%;
   pointer-events: none;
   transition: border-color 0.8s ease, background-color 0.8s ease, box-shadow 0.8s ease;
@@ -507,6 +555,9 @@ border: 8px solid #2C456B;
 box-shadow: 0 0 0 30px #0f1a2a;
 }
 
+
+
+/* API Key Input Elements */
 .api-key-container {
   margin-top: 630px;
 }
@@ -527,10 +578,6 @@ box-shadow: 0 0 0 30px #0f1a2a;
 }
 
 .Submit-Button:hover {
-  transform: scale(1.05);
-}
-
-.timer-start-stop:hover {
   transform: scale(1.05);
 }
 
@@ -556,49 +603,32 @@ box-shadow: 0 0 0 30px #0f1a2a;
 
 
 .dark-mode .api-key-input:focus {
-  caret-color: #3C649F; /* Cursor color */
-}
-
-.light-mode .Button-submit,
-.light-mode .Submit-Button,
-.light-mode .button-basic-quiz,
-.light-mode .button-detailed-quiz,
-.light-mode .Button-previous,
-.light-mode .Button-next,
-.light-mode .timer-start-stop,
-.light-mode .Button-get-answer {
-  background-color: #634832; /* Set button background color */
-  color: #f4f4f4; /* Set button text color */
+  caret-color: #3C649F;
 }
 
 .light-mode .api-key-input {
-  color: #634832; /* Set input text color */
-  border-color: #634832; /* Set input border color */
+  color: #634832;
+  border-color: #634832;
 }
 
 .light-mode .api-key-input::placeholder {
-  color: #634832; /* Set input placeholder color */
-}
-
-.dark-mode .Button-submit,
-.dark-mode .Submit-Button,
-.dark-mode .button-basic-quiz,
-.dark-mode .button-detailed-quiz,
-.dark-mode .Button-previous,
-.dark-mode .Button-next,
-.dark-mode .timer-start-stop,
-.dark-mode .Button-get-answer {
-  background-color: #3C649F;
-  color: #f4f4f4; /* Set button text color */
+  color: #634832;
 }
 
 .dark-mode .api-key-input {
-  color: #3C649F; /* Set input text color */
-  border-color: #3C649F; /* Set input border color */
+  color: #3C649F;
+  border-color: #3C649F;
 }
 
 .dark-mode .api-key-input::placeholder {
-  color: #3C649F; /* Set input placeholder color */
+  color: #3C649F;
+}
+
+
+
+/* Timer Functions */
+.timer-start-stop:hover {
+  transform: scale(1.05);
 }
 
 .timer-container {
@@ -618,11 +648,11 @@ box-shadow: 0 0 0 30px #0f1a2a;
 }
 
 .light-mode .timer {
-  color: #634832; /* Color for dark mode */
+  color: #634832;
 }
 
 .dark-mode .timer {
-  color: #3C649F; /* Color for dark mode */
+  color: #3C649F;
 }
 
 .timer-start-stop {
@@ -640,6 +670,36 @@ box-shadow: 0 0 0 30px #0f1a2a;
   z-index: 5;
 }
 
+
+
+/* Button Formatting */
+.light-mode .Button-submit,
+.light-mode .Submit-Button,
+.light-mode .button-basic-quiz,
+.light-mode .button-detailed-quiz,
+.light-mode .Button-previous,
+.light-mode .Button-next,
+.light-mode .timer-start-stop,
+.light-mode .Button-get-answer {
+  background-color: #634832;
+  color: #f4f4f4;
+}
+
+.dark-mode .Button-submit,
+.dark-mode .Submit-Button,
+.dark-mode .button-basic-quiz,
+.dark-mode .button-detailed-quiz,
+.dark-mode .Button-previous,
+.dark-mode .Button-next,
+.dark-mode .timer-start-stop,
+.dark-mode .Button-get-answer {
+  background-color: #3C649F;
+  color: #f4f4f4;
+}
+
+
+
+/* Get Results Button */
 .Button-get-answer {
   border: none;
   border-radius: 20px;
@@ -656,13 +716,16 @@ box-shadow: 0 0 0 30px #0f1a2a;
   transform: scale(1.05);
 }
 
+
+
+/* Results Output Formatting */
 .Results-text {
   position: absolute;
   top: 30%;
   left: 50%;
   font-size: 50px;
   transform: translate(-50%, -50%);
-  text-align: center; /* To center the text horizontally */
+  text-align: center;
 }
 
 .Loading-overlay {
@@ -674,31 +737,31 @@ box-shadow: 0 0 0 30px #0f1a2a;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4em; /* Adjust font size as needed */
-  z-index: 1; /* Ensure the loading overlay appears above other content */
+  font-size: 4em;
+  z-index: 1;
 }
 
 .Loading-spinner-container {
-  margin-right: 100px; /* Add space between text and spinner */
+  margin-right: 100px;
 }
 
 .light-mode .Loading-spinner {
-  border: 8px solid #DBC1AC; /* Light grey border */
-  border-top: 8px solid #38220F; /* Blue border on top */
+  border: 8px solid #DBC1AC;
+  border-top: 8px solid #38220F;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: spin 1s linear infinite; /* Spinning animation */
+  animation: spin 1s linear infinite;
   transition: border-color 0.8s ease;
 }
 
 .dark-mode .Loading-spinner {
-  border: 8px solid #0f1a2a; /* Light grey border */
-  border-top: 8px solid #2C456B; /* Blue border on top */
+  border: 8px solid #0f1a2a;
+  border-top: 8px solid #2C456B;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: spin 1s linear infinite; /* Spinning animation */
+  animation: spin 1s linear infinite;
   transition: border-color 0.8s ease;
 }
 
@@ -708,9 +771,9 @@ box-shadow: 0 0 0 30px #0f1a2a;
 }
 
 .Results-container {
-  max-width: 800px; /* Adjust max-width as needed */
-  margin: 50px auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding for spacing */
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
 }
 
 .Results-heading {

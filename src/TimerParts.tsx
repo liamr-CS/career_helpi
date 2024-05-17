@@ -1,3 +1,4 @@
+/* Imports */
 import React, { useEffect, useState } from 'react';
 import Timer from './Timer';
 
@@ -5,6 +6,9 @@ interface TimerPartsProps {
   updateCount?: (count: number) => void;
 }
 
+
+
+/* Consts and Returns for Timer Logic and Functionality */
 const TimerParts: React.FC<TimerPartsProps> = ({ updateCount }) => {
   const [timer] = useState<Timer>(new Timer());
   const [timerRunning, setTimerRunning] = useState<boolean>(true);

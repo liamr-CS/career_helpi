@@ -1,3 +1,4 @@
+/* SCRAPPED */
 import React from 'react';
 
 function BaseQsDes() {

@@ -1,3 +1,4 @@
+/* Imports */
 import React, { useState } from "react";
 import DetailedReport from './ChatGPTDetailed';
 import DetQuestions from './DetailedQuestions';
@@ -15,7 +16,8 @@ function DetailedQuestionsPage() {
         answer6: "",
         answer7: ""
     });
-    
+
+    //ChatGPT-4 debugged updateCompletedDetailedQuestions and handleAnswerChange as I used answers[A] instead of answers.answerA
     function updateCompletedDetailedQuestions () {
         if(answers.answer1 !== "" && answers.answer2 !== "" && answers.answer3 !== "" && answers.answer4 !== "" && answers.answer5 !== "" 
         && answers.answer6 !== "" && answers.answer7 !== "") {
